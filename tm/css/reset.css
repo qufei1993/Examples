@@ -1,0 +1,18 @@
+body,p,ul,h1,h2,h3,h4,h5,h6,input,dl,dt,dd{
+  margin: 0px;
+  padding: 0px;
+}
+ul li {
+  list-style: none;
+}
+body {
+  font: 12px/1.5 tahoma, arial, "\5b8b\4f5";
+  background:#f5f5f5;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+em {
+  font-style: normal;
+}

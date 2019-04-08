@@ -1,0 +1,254 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+figure {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+body {
+  background-size: 100%;
+  font-size: 12px;
+  font-family: 'Microsoft Yahei';
+  color: #272a30;
+  background: rgba(51, 51, 51, 0.04);
+}
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+/* 公用 */
+.items {
+  height: 150px;
+  padding: 20px 0;
+}
+.items:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.items .item-fl {
+  float: left;
+  width: 200px;
+  height: 130px;
+  overflow: hidden;
+  padding: 5px;
+}
+.items .item-fl img {
+  width: 230px;
+  height: 140px;
+  transform: scale(1);
+  transition: .5s linear;
+}
+.items .item-fl img:hover {
+  transform: scale(1.2);
+  transition: transform .5s linear;
+}
+.items .item-fr {
+  float: left;
+  line-height: 22px;
+  color: #756F71;
+  width: 500px;
+  padding-left: 20px;
+}
+.items .item-fr > h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 3px;
+}
+.items .item-fr > h3 a {
+  color: #474645;
+}
+.items .item-fr .info {
+  word-wrap: break-word;
+}
+.items .item-fr .autor {
+  padding: 10px 0;
+}
+.items .item-fr .autor > a {
+  padding: 5px;
+  color: #756F71;
+}
+.items .item-fr .autor > a i {
+  padding-right: 3px;
+}
+.items .item-fr .autor .reads {
+  margin-left: 30px;
+  width: 80px;
+  border-radius: 20px;
+  padding: 1px;
+  text-align: center;
+  background: rgba(208, 208, 208, 0.8);
+  color: #333;
+  text-shadow: 2px 2px 2px #fff;
+}
+.items .item-fr .autor .reads:hover {
+  background: rgba(67, 147, 223, 0.8);
+  color: #fff;
+  text-shadow: 2px 2px 2px #333;
+}
+.items .item-fr .autor .bk {
+  color: #759b08;
+}
+.items .item-fr .autor .bk i {
+  color: #f8a8a8;
+}
+.items .item-fr .autor .bk:hover {
+  text-decoration: underline;
+}
+.items .item-fr .autor .date i {
+  color: #6ecacb;
+}
+.items .item-fr .autor .bk,
+.items .item-fr .autor .date {
+  display: block;
+  float: left;
+}
+.items .item-fr .autor .ll,
+.items .item-fr .autor .pl {
+  display: block;
+  float: right;
+}
+.pageBox {
+  text-align: center;
+  margin: 10px 0;
+}
+.pageBox > a,
+.pageBox > span {
+  display: inline-block;
+  border: 1px solid #c3cdc9;
+  padding: 8px 15px;
+  background: #f1f6f5;
+  color: #333;
+  border-radius: 3px;
+  margin: 0 3px;
+}
+.pageBox > a:hover,
+.pageBox > span:hover {
+  color: #eb0064;
+}
+.pageBox .active {
+  background: #4f616d;
+  color: #fff;
+}
+.pageBox .active:hover {
+  color: #fff;
+}
+article .title {
+  font-size: 22px;
+  padding: 20px 0;
+  font-weight: 500;
+  text-align: center;
+}
+article .info {
+  border: #ccc 1px dashed;
+  text-align: center;
+  padding: 5px 0;
+  color: #999;
+}
+article .info > small {
+  padding-left: 10px;
+  letter-spacing: 1px;
+}
+article .info > a {
+  color: #999;
+}
+article .info > a:hover {
+  text-decoration: underline;
+  color: #F60;
+}
+article .content {
+  overflow: hidden;
+  margin: 20px 30px 20px 0;
+  line-height: 28px;
+  font-size: 14px;
+  text-indent: 2em;
+  color: #666;
+}
+article .content img {
+  display: block;
+  margin: 0 auto;
+}
+article .author {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+/* .search-inp */
+.search-inp {
+  position: fixed;
+  top: -200px;
+  transition: top 0.5s;
+  left: 0;
+  width: 100%;
+  height: 200px;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+.search-inp input {
+  outline: medium;
+  border: 0;
+  background: rgba(255, 255, 255, 0.92);
+  color: #333;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.search-inp input:focus {
+  border: 0;
+  border: 1px solid #66afe9;
+  box-shadow: inset 0 2px 2px rgba(102, 175, 233, 0.075);
+}
+.search-inp .fa-times-circle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.search-inp .sea-center {
+  width: 720px;
+  margin: 80px auto;
+  position: relative;
+}
+.search-inp .sea-center > i {
+  position: absolute;
+  left: 10px;
+  top: 8px;
+  color: #ccc;
+}
+.search-inp .sea-center .sea-input {
+  display: block;
+  width: 550px;
+  padding: 10px 10px 10px 40px;
+  border-radius: 40px;
+  margin-right: 20px;
+  float: left;
+}
+.search-inp .sea-center .submit {
+  display: block;
+  width: 80px;
+  padding: 10px;
+  border-radius: 40px;
+  float: left;
+  cursor: pointer;
+}
+.search-inpOnclick {
+  top: 0;
+  transition: all 0.5s;
+}

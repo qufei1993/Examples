@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>党员故事坊</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="title">
+      <span class="logo hidden-md hidden-sm hidden-lg" ><img src="images/logo.png"/></span>
+      南钢街道<span>“</span>党群E服务<span>”</span>云平台<p class="des02 hidden-xs">THE E-SERVICE OF PARTY AND MASSES</p></div>
+    <div id="login"  class="login">
+      <h1 class="login_title">注册</h1>
+      <form class="form-horizontal login_cont" name="loginForm" role="form">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-3 hidden-xs control-label">手机号: </label>
+          <div class="col-sm-9">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="请输入手机号注册">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-3 hidden-xs col-xs-12 control-label">验证码:</label>
+          <div class="col-sm-4 col-xs-6">
+            <input type="text" class="form-control" id="inputPassword3" placeholder="">
+          </div>
+          <div class="col-sm-3 col-xs-4 regExp btn btn-default">
+            <a href="#">获取验证码</a>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputPassword3" class="col-sm-3 hidden-xs control-label">密<span style="opacity:0;">测</span>码:</label>
+          <div class="col-sm-9">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="设置密码">
+          </div>
+        </div>
+       
+        <div class="form-group"> 
+          <div class="col-sm-offset-2 col-sm-5 col-xs-5">
+            <div class="checkbox">
+              <label>
+                <span class="sign-in-info">验证码错误！</span>
+              </label>
+            </div>
+          </div>
+          <div class="col-sm-5 col-sm-offset-0 col-xs-offset-2 col-xs-5">
+            <div class="checkbox">
+              <label>
+                <span class=""><a href="login.html">返回登录</a></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-8 col-sm-offset-2">
+            <input type="submit" class="btn btn-lg btn-block btn-primary" value="注册" />
+          </div>
+        </div>
+      </form>
+    </div>
+    <script type="text/javascript">
+      var login = document.getElementById('login');
+      if(document.body.clientWidth < 768){
+        login.style.left = (document.body.clientWidth/2 - 150) + 'px';
+        login.style.top = (window.innerHeight/2 - 180) + 'px';
+      }
+    </script>
+    <div class="index_footer hidden-xs">
+      <small>主办单位: 中共***街道党委会</small> &nbsp;&nbsp;<small class="hidden-xs">版权所有: 南昌***科技有限公司</small>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

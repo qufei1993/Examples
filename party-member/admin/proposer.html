@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>党建工作平台</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.6 -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="css/AdminLTE.css">
+  <!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+  <link rel="stylesheet" href="css/_all-skins.min.css">
+  <!-- Bootstrap DateTimePicker style -->
+  <link rel="stylesheet" href="../css/bootstrap-datetimepicker.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="plugins/datatables/dataTables.bootstrap.css">
+
+  <!-- User`s style -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini fixed">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+
+    <a href="../../index2.html" class="logo hidden-xs">
+
+      <span class="logo-lg"><b>党建</b>工作平台</span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Messages: style can be found in dropdown.less-->
+          <li class="dropdown messages-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-envelope-o"></i>
+              <span class="label label-success">4</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">你有<span> 4 </span>条消息</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        <strong>团队支持</strong>
+                        <small><i class="fa fa-clock-o"></i> 5 分钟</small>
+                      </h4>
+                      <p>为什么不买一个新的主题？</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+                  <li>
+                    <!-- start message -->
+                    <a href="#">
+                      <div class="pull-left">
+                        <img src="images/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                      </div>
+                      <h4>
+                        <strong>团队支持</strong>
+                        <small><i class="fa fa-clock-o"></i> 5 分钟</small>
+                      </h4>
+                      <p>为什么不买一个新的主题？</p>
+                    </a>
+                  </li>
+                  <!-- end message -->
+
+                </ul>
+              </li>
+              <li class="footer"><a href="#">查看全部</a></li>
+            </ul>
+          </li>
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">10</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">你有 <span>10</span> 条通知</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-users text-aqua"></i> 今天有5个新成员加入
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="footer"><a href="#">查看全部</a></li>
+            </ul>
+          </li>
+          <!-- Tasks: style can be found in dropdown.less -->
+          <li class="dropdown tasks-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-flag-o"></i>
+              <span class="label label-danger">9</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li class="header">你有 <span>7</span> 条任务</li>
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <!-- Task item -->
+                    <a href="#">
+                      <h3>
+                        设计一些按钮
+                        <span class="pull-right">20%</span>
+                      </h3>
+                      <div class="progress xs">
+                        <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                          <span class="sr-only">完成20%</span>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <!-- end task item -->
+                </ul>
+              </li>
+              <li class="footer">
+                <a href="#">查看全部</a>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="images/img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">熊先生</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="images/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  熊先生 -党委书记
+                  <small>登陆时间：2016-9-22</small>
+                </p>
+              </li>
+              <!-- Menu Body -->
+              <li class="user-body">
+                <div class="row">
+                  <div class="col-xs-4 text-center">
+                    <a href="#">切换角色</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">测试项</a>
+                  </div>
+                  <div class="col-xs-4 text-center">
+                    <a href="#">测试项</a>
+                  </div>
+                </div>
+                <!-- /.row -->
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="#" class="btn btn-default btn-flat">个人资料</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">退出</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+          <!-- Control Sidebar Toggle Button -->
+          <li>
+            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="images/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>熊先生</p>
+          <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="#" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="查找...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu">
+        <li class="header">工作管理</li>
+
+        <li>
+          <a href="index.html">
+            <i class="fa fa-th"></i> <span>首页</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">Hot</small>
+            </span>
+          </a>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>组织管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 党组织管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 用户账号管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 党员管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 预备党员管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 组织转接管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 流动党员管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 党员变动管理</a></li>
+            <li><a href="party_organ.html"><i class="fa fa-circle-o"></i> 历史党员管理</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>组织发展</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 申请人管理</a></li>
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 积极分子管理</a></li>
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 发展对象管理</a></li>
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 发展对象审批</a></li>
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 预备党员审批</a></li>
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 预备党员转正审批</a></li>
+            <li><a href="proposer.html"><i class="fa fa-circle-o"></i> 党员发展配额</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>组织生活管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> 支部党员大会</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> 支部委员会</a></li>
+            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> 党小组会</a></li>
+            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> 党课</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-pie-chart"></i>
+            <span>党委工作</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../charts/chartjs.html"><i class="fa fa-circle-o"></i> 党政联席会议管理</a></li>
+            <li><a href="../charts/morris.html"><i class="fa fa-circle-o"></i> 党委(扩大)会议管理</a></li>
+            <li><a href="../charts/flot.html"><i class="fa fa-circle-o"></i> 党委中心组学习管理</a></li>
+            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> 民主生活管理</a></li>
+            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> 三重一大贯彻落实</a></li>
+            <li><a href="../charts/inline.html"><i class="fa fa-circle-o"></i> 班子建设</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>信息管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> 短信管理</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> 公告管理</a></li>
+            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> 新闻管理</a></li>
+            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> 通知管理</a></li>
+            <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> 通讯录</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>统计管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> 党费统计</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> 基本信息统计</a></li>
+            <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> 工作任务考核</a></li>
+            <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> 三会一课统计</a></li>
+            <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> 工作办理情况统计</a></li>
+          </ul>
+        </li>
+
+        <li class="header">平台内容管理</li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>栏目管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> 增加栏目</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> 修改栏目</a></li>
+          </ul>
+        </li>
+        <li class="treeview">
+          <a href="#">
+            <i class="fa fa-laptop"></i>
+            <span>文章管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> 增加文章</a></li>
+            <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> 修改文章</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        当前组织机构：
+        <small>南昌市青山湖区</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+        <li><a href="#">组织管理</a></li>
+        <li class="active">组织转接管理</li>
+      </ol>
+    </section>
+    <!-- Content (Page main content)-->
+    <section class="content">
+      <div class="panel panel-primary">
+        <div class="panel-heading">
+          <div class="seach row">
+            <form class="form-inline" action="" role="form">
+              组织名称：<input class="form-control" type="text" name="name" ">
+              <span class="hidden-xs">
+               &nbsp;&nbsp;所有下级：
+              <select class="form-control" name="" id="">
+                <option value="1">是</option>
+                <option value="0">否</option>
+              </select>&nbsp;&nbsp;
+              组织类型：
+              <select class="form-control" name="type">
+                <option value="0">全部</option>
+                <option value="1">党支部</option>
+                <option value="2">总支部</option>
+                <option value="3">党委</option>
+                <option value="4">党工委</option>
+                <option value="5">党组</option>
+              </select>&nbsp;&nbsp;
+              </span>
+
+              <button class="btn btn-default btn-sm pull-right" type="submit" >搜索</button>
+            </form>
+          </div>
+          <div class="operation clearfix">
+            <div class="dropdown pull-left">
+              <button type="button" class="btn dropdown-toggle" id="dropdownMenu" data-toggle="dropdown">选择组织机构
+                <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                <li class="treeview">
+                  <a href="#">
+                    <i class="fa fa-laptop"></i>
+                    <span>组织管理</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-left pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li><a href="../UI/general.html"><i class="fa fa-circle-o"></i> 党组织管理</a></li>
+                    <li><a href="../UI/icons.html"><i class="fa fa-circle-o"></i> 用户账号管理</a></li>
+                    <li><a href="../UI/buttons.html"><i class="fa fa-circle-o"></i> 党员管理</a></li>
+                    <li><a href="../UI/sliders.html"><i class="fa fa-circle-o"></i> 预备党员管理</a></li>
+                    <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> 组织转接管理</a></li>
+                    <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> 流动党员管理</a></li>
+                    <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> 党员变动管理</a></li>
+                    <li><a href="../UI/timeline.html"><i class="fa fa-circle-o"></i> 历史党员管理</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <button class="btn btn-sm pull-left" data-toggle="modal" data-target="#create">
+              新建党组织
+            </button>
+          </div>
+        </div>
+
+        <div class="table-responsive">
+          <table class="table table-hover" id="data_table">
+            <thead>
+            <tr>
+              <th>操作</th>
+              <th>组织名称</th>
+              <th>组织类型</th>
+              <th>是否有效</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <td>
+                <button class="btn btn-xs btn-info" data-toggle="modal"  data-target="#modify">
+                  <span class="glyphicon glyphicon-edit"></span>&nbsp;编辑
+                </button>
+                <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete">
+                  <span class="glyphicon glyphicon-trash"></span>&nbsp;删除
+                </button>
+                <button class="btn btn-xs btn-success" data-toggle="modal" data-target="#auth">
+                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;授权
+                </button>
+              </td>
+              <td>第一党支部</td>
+              <td>党支部</td>
+              <td>是</td>
+            </tr>
+            <tr>
+              <td>
+                <button class="btn btn-xs btn-info" data-toggle="modal"  data-target="#modify">
+                  <span class="glyphicon glyphicon-edit"></span>&nbsp;编辑
+                </button>
+                <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete">
+                  <span class="glyphicon glyphicon-trash"></span>&nbsp;删除
+                </button>
+                <button class="btn btn-xs btn-success" data-toggle="modal" data-target="#auth">
+                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;授权
+                </button>
+              </td>
+              <td>第一党支部</td>
+              <td>党支部</td>
+              <td>是</td>
+            </tr>
+            <tr>
+              <td>
+                <button class="btn btn-xs btn-info" data-toggle="modal"  data-target="#modify">
+                  <span class="glyphicon glyphicon-edit"></span>&nbsp;编辑
+                </button>
+                <button class="btn btn-xs btn-danger" data-toggle="modal" data-target="#delete">
+                  <span class="glyphicon glyphicon-trash"></span>&nbsp;删除
+                </button>
+                <button class="btn btn-xs btn-success" data-toggle="modal" data-target="#auth">
+                  <span class="glyphicon glyphicon-info-sign"></span>&nbsp;授权
+                </button>
+              </td>
+              <td>第一党支部</td>
+              <td>党支部</td>
+              <td>是</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="panel-footer fixed-bottom">
+          共<span> 1 </span>页&nbsp;&nbsp; 共<span> 3 </span>条
+        </div>
+      </div>
+    </section>
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer" style="text-align: center">
+    <span class="hidden-xs">建议使用：IE8及以上浏览器 邮编：450007</span>&nbsp;&nbsp;主办单位: 中共***街道党委会
+    <p class="hidden-xs">版权所有: 南昌***科技有限公司&nbsp;&nbsp;&nbsp;豫ICP备05012610号</p>
+  </footer>
+
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+
+<!-- modal -->
+<!--编辑模态-->
+<div class="modal fade" id="modify">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-hidden="true">&times;</button>
+        <h3 class="modal-title" id="myModalLabel">编辑党组织</h3>
+      </div>
+      <div class="modal-body">
+        <h4> <strong>组织信息</strong> <small>( <span>*</span> 为必填项)</small></h4>
+        <form id="createForm" class="form-horizontal" role="form" action="" method="post">
+          <div class="form-group">
+            <label for="organ_code" class="col-sm-4 control-label"><span class="sign"> * </span>组织代码：</label>
+            <div class="col-sm-8">
+              <label class="control-label" id="organ_code" name="code">123.123.0B38.002</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="organ_name" class="col-sm-4 control-label"><span class="sign"> * </span>组织名称：</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="organ_name" name="name"
+                     placeholder="组织名称">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dues_month" class="col-sm-4 control-label"><span class="sign"> * </span>党费交至月份：</label>
+            <div class="input-group date form_datetime col-sm-8">
+              <input size="18" type="text" class="form-control" id="dues_month" name="month" value readonly>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label"><span class="sign"> * </span>组织类型：</label>
+            <div class="col-sm-8">
+              <select name="type">
+                <option value="1">党支部</option>
+                <option value="2">总支部</option>
+                <option value="3">党委</option>
+                <option value="4">党工委</option>
+                <option value="5">党组</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label"><span class="sign"> * </span>是否有效：</label>
+            <div class="col-sm-8">
+              <select name="valid">
+                <option value="1">是</option>
+                <option value="0">否</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-default">保存</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 删除模态 -->
+<div class="modal fade" id="delete">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title">删除</h3>
+      </div>
+      <div class="modal-body">
+        <p style="text-align: center; font-size: 1.2em; color: #f00;">确定要删除这些记录吗？</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- 授权模态 -->
+<div class="modal fade" id="auth">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="modal-title">授权</h3>
+      </div>
+      <div class="modal-body">
+        <p class="help-block">以下选项可多选，也可以全都不选。</p>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">党课培训
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">组织转接（机构内）
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">组织转接（机构外）
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox">审批预备党员
+          </label>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" class="btn btn-primary">确定</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--新建模态-->
+<div class="modal fade" id="create">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"
+                aria-hidden="true">&times;</button>
+        <h3 class="modal-title" id="myModalLabel">新建党组织</h3>
+      </div>
+      <div class="modal-body">
+        <h4> <strong>组织信息</strong> <small>( <span>*</span> 为必填项)</small></h4>
+        <form id="createForm" class="form-horizontal" role="form" action="" method="post">
+          <div class="form-group">
+            <label class="col-sm-4 control-label">上级组织名称：</label>
+            <div class="col-sm-8">
+              <label class="control-label">南昌市青山湖区</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label">上级组织代码：</label>
+            <div class="col-sm-8">
+              <label class="control-label">123.123.0B38.002</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="organ_code" class="col-sm-4 control-label"><span class="sign"> * </span>组织代码：</label>
+            <div class="col-sm-8">
+              <input class="form-control" id="organ_code" name="code"
+                     placeholder="组织名称">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="organ_name" class="col-sm-4 control-label"><span class="sign"> * </span>组织名称：</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="organ_name" name="name"
+                     placeholder="组织名称">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dues_month" class="col-sm-4 control-label"><span class="sign"> * </span>党费交至月份：</label>
+            <div class="input-group date form_datetime col-sm-8">
+              <input size="18" type="text" class="form-control" id="dues_month" name="month" value readonly>
+              <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label"><span class="sign"> * </span>组织类型：</label>
+            <div class="col-sm-8">
+              <select name="type">
+                <option value="1">党支部</option>
+                <option value="2">总支部</option>
+                <option value="3">党委</option>
+                <option value="4">党工委</option>
+                <option value="5">党组</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-4 control-label"><span class="sign"> * </span>是否有效：</label>
+            <div class="col-sm-8">
+              <select name="valid">
+                <option value="1">是</option>
+                <option value="0">否</option>
+              </select>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-default">保存</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- end modal -->
+
+<!-- jQuery 2.2.3 -->
+<script src="../js/jquery-1.11.1.js"></script>
+<!-- Bootstrap 3.3.6 -->
+<script src="../js/bootstrap.js"></script>
+<!-- SlimScroll -->
+<script src="plugins/slimScroll/jquery.slimscroll.js"></script>
+<!-- DataTables -->
+<script src="plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="plugins/datatables/dataTables.bootstrap.min.js"></script>
+<!-- FastClick -->
+<script src="plugins/fastclick/fastclick.js"></script>
+<!-- DateTimePicker -->
+<script src="../js/bootstrap-datetimepicker.js"></script>
+<!--datetimepicker.zh-CN.js-->
+<script src="../js/bootstrap-datetimepicker.zh-CN.js"></script>
+<!-- Moment.js-->
+<script src="../js/moment.js"></script>
+<!-- AdminLTE App -->
+<script src="js/app.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="js/demo.js"></script>
+
+<!-- User script -->
+<script>
+  $(function () {
+    $(".form_datetime").datetimepicker({
+      format:"yyyy-mm",
+      showMeridian:true,
+      autoclose:true,
+      language:'zh-CN',
+      pickDate:true,
+      minView:2,
+      pickTime:true,
+      pickerPosition: "bottom-left"
+    });
+    $('#data_table').DataTable({
+      "paging": true,
+      "lengthChange": false,
+      "searching": false,
+      "ordering": true,
+      "info": true,
+      "autoWidth": false,
+      "language": {
+        "url": "http://cdn.datatables.net/plug-ins/9dcbecd42ad/i18n/Chinese.json"
+      },
+    });
+  });
+</script>
+</body>
+</html>

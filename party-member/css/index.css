@@ -1,0 +1,231 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0;
+  padding: 0;
+}
+.clearfix:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+li {
+  list-style: none;
+}
+.l-40 {
+  height: 40px;
+}
+body {
+  background: #ffffff url(../images/body1.png) no-repeat;
+  background-size: 100%;
+  font-family: tahoma, arial, 'Hiragino Sans GB', '宋体', sans-serif;
+}
+/* 首页 */
+.title {
+  color: #fff;
+  font-size: 28px;
+  font-family: Arial;
+  text-align: center;
+  font-weight: 600;
+  margin-top: .5%;
+}
+.title .des02 {
+  font-size: 14px;
+}
+.center_cont {
+  width: 600px;
+  height: 160px;
+  position: absolute;
+  left: calc(50% - 300px);
+  top: calc(50% - 80px);
+}
+.center_cont .description {
+  text-align: center;
+  margin-bottom: 13px;
+}
+.center_cont .description .des01 {
+  font-size: 25px;
+  font-family: Arial;
+  font-weight: bold;
+  margin: 0;
+  /*color:rgb(208,30,26);
+			-webkit-text-stroke: 0.5px yellow;*/
+}
+.center_cont .description .des01 span {
+  font-family: "黑体";
+}
+.center_cont .party_nav {
+  height: 100px;
+  margin-right: 0;
+  margin-left: 0;
+}
+.center_cont .party_nav a {
+  background: #ffffcc;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: all .3s ease;
+  display: block;
+  height: 120px;
+  line-height: 100px;
+  text-align: center;
+  border-radius: 20px;
+  border: #cec192;
+  position: relative;
+}
+.center_cont .party_nav a span {
+  position: absolute;
+  display: block;
+  bottom: -30px;
+  width: 100%;
+  color: #992024;
+  font-size: 18px;
+  font-weight: bold;
+}
+.center_cont .party_nav a:hover {
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3) !important;
+  -webkit-transition: all .3s ease;
+}
+/*
+	登录页
+*/
+.login {
+  width: 400px;
+  height: 360px;
+  position: absolute;
+  left: calc(50% - 200px);
+  top: calc(55% - 180px);
+  color: #666666;
+  border-radius: 8px;
+  border: 1px solid rgba(197, 198, 199, 0.61);
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+.login .login_title {
+  width: 100%;
+  height: 45px;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 1px 2px #c5c6c7;
+  letter-spacing: 2px;
+}
+.login .login_cont {
+  padding: 20px 10px 10px 10px;
+}
+.login .login_cont .col-sm-9,
+.login .login_cont .col-sm-4,
+.login .login_cont .col-sm-5 {
+  padding-left: 0;
+}
+.login .login_cont .regExp img {
+  width: 100%;
+}
+.login .login_cont .sign-in-info {
+  font-size: 13px;
+  color: red;
+  margin-left: 30;
+}
+/* 
+	footer 
+*/
+.index_footer {
+  background: #eee;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+}
+@media (max-width: 768px) {
+  body {
+    /*background:url(../images/phone_body.jpg) no-repeat; 
+		background-size: 100vw 100vh;*/
+    background: rgba(230, 210, 210, 0.15);
+  }
+  .title {
+    font-size: 16px;
+    line-height: 40px;
+    background: #dc2e2e;
+    box-shadow: 0 3px 20px rgba(255, 255, 0, 0.2) !important;
+    margin-top: 0;
+    padding: 3px 0;
+    font-family: '黑体';
+    letter-spacing: 2px;
+  }
+  .title .logo img {
+    height: 30px;
+  }
+  .poem {
+    color: #000;
+    font-size: 16px;
+    font-family: '黑体';
+    letter-spacing: 6px;
+    font-style: oblique;
+    margin-bottom: 20px;
+  }
+  .poem > p:first-child {
+    text-indent: 1em;
+  }
+  .poem > p:nth-child(2) {
+    text-indent: 2em;
+  }
+  .poem > p:nth-child(3) {
+    text-indent: 3em;
+  }
+  .poem > p:nth-child(4) {
+    text-indent: 4em;
+  }
+  .center_cont {
+    width: 240px;
+    top: 70px;
+    left: calc(50% - 130px);
+  }
+  .party_nav > li {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 15px;
+  }
+  .party_nav a {
+    height: 100px !important;
+    line-height: 85px !important;
+  }
+  .party_nav a span {
+    font-size: 14px !important;
+    font-family: '黑体';
+  }
+  .party_nav a img {
+    width: 40%;
+  }
+  .login {
+    width: 300px;
+    left: calc(50% - 150px);
+    top: calc(50% - 180px);
+    background: #fff;
+  }
+  .login .login_title {
+    background: #fff;
+    font-family: '微软雅黑';
+  }
+  .login .login_cont .col-sm-9,
+  .login .login_cont .col-sm-4,
+  .login .login_cont .col-sm-5 {
+    padding-left: 15px;
+  }
+}
+/* pad */
+@media (min-width: 768px) and (max-width: 991px) {
+  .description .des01 {
+    font-size: 20px;
+  }
+  .title {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

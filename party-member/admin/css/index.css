@@ -1,0 +1,120 @@
+body {
+  padding-top: 50px;
+  background: #f1f1f1;
+  font-size: 16px;
+  font-family: "Microsoft Yahei";
+}
+.topbar-admin {
+	min-height: 50px;
+	color: #fff;
+	background-color: #333;
+}
+
+.topbar-admin a {
+	color: #fff;
+}
+
+.topbar-admin .top_bar_fl a {
+	text-decoration: none;
+	float: left;
+}
+.topbar-admin .top_bar_fl{
+	float: left;
+} 
+.topbar-admin .top_bar_fr{
+	float: right;
+} 
+
+.topbar-admin .nav>li>a>.label {
+	position: absolute;
+	top: 9px;
+	right: 7px;
+	text-align: center;
+	font-size: 9px;
+	padding: 2px 3px;
+	line-height: .9;
+}
+.top_bar_fr .navbar-custom-menu {
+	float: right;
+}
+.navbar .header_img>a {
+  /*height: 50px;*/
+  line-height: 48px;
+}
+
+.navbar-custom-menu .nav a:hover, .nav .open>a:focus {
+	background-color: #CD6364;
+}
+/*
+.navbar {
+	border: 0;
+	margin-bottom: 0;
+}
+.navbar .nav {
+	
+}
+*/
+.navbar .nav>li {
+	float: left;
+	text-align: center;
+}
+.navbar .nav .nav_a {
+	padding: 0 10px;
+	font-size: 18px;
+}
+
+.content {
+	padding: 0;
+}
+.main-content {
+	margin-top: 30px;
+}
+.main-content .jumbotron, .content-wrapper .jumbotron {
+	margin: 10px 0;
+	padding: 0;
+	min-height: 360px;
+	background-color: #fff;
+}
+.main-content .panel .panel-heading {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.logo_bar {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  margin-bottom: 5px;
+  background: #fff;
+  /* bootstrap系统样式 */
+}
+.logo_bar .logo {
+  height: 84px;
+  line-height: 84px;
+  letter-spacing: 2px;
+}
+.logo_bar .logo .logo_img {
+  display: block;
+  margin-right: 10px;
+  float: left;
+
+}
+.logo_bar .logo .logo_img img {
+  width: 38px;
+  height: 40px;
+}
+.logo_bar .logo h1 {
+  display: block;
+  float: left;
+  font-family: '黑体', serif;
+  font-size: 28px;
+  line-height: 84px;
+}
+
+/*@media (min-width: 768px){*/
+  /*.container {*/
+    /*width: 90%;*/
+  /*} */
+/*}*/
+
+
+
+

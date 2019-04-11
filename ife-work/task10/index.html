@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>flex练习</title>
+	<style>
+		.header{display: -webkit-flex;width:100%;justify-content:space-between;align-items:center;
+			flex-flow:row wrap;}
+		a{text-align:center;border:1px solid red;display:block;width:148px;margin:20px;}
+		.A{
+			height:120px;
+			line-height:120px;
+		}
+		.B{
+			height:100px;
+			line-height: 100px;
+		}
+		.C{
+			height:40px;
+			line-height:40px;
+		}
+		.D{
+			height:200px;
+			line-height: 200px;
+			border:1px solid blue;
+		}
+		@media (max-width:680px){
+			.header{align-items:flex-start;}
+			.D{order:-1;}
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a class="A" href="#">A</a>
+		<a class="B" href="#">B</a>
+		<a class="C" href="#">C</a>
+		<a class="D" href="#">D</a>
+	</div>
+</body>
+</html>

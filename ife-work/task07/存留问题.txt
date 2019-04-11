@@ -1,0 +1,1 @@
+select点击之后  IE下仍有黑色边框 outline:none属性无效

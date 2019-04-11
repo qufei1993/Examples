@@ -1,0 +1,398 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>任务9:使用HTMLCSS实现一个复杂页面</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<div class="container clearfix">
+			<h2 class="logo">后台管理系统</h2>	
+			<span class="login">登录</span>	
+			<input class="search" type="search" placeholder="请输入内容" />
+		</div>
+	</header>
+	<section class="main">
+	<div class="clearfix">
+		<nav class="left">
+			<div class="m-16"></div>
+				<div class="pho">
+					<span class="photo"><img src="image/photo.jpg"></span>
+					<h3 class="username">前端学习</h3>
+				</div>
+				<div class="star clearfix">
+					<span class="group">
+						<a href="#">110</a>
+						<a href="#">收藏</a>
+					</span>
+					<span class="line"></span>
+					<span class="group">
+						<a href="#">310</a>
+						<a href="#">粉丝</a>
+					</span>
+				</div>
+				<ul class="nav" id="nav">
+					<li class="n-li active">
+						<a href="#" class="aa n-a ac-a" onclick="navs(0);"><i class="i01"></i>个人报表</a>
+						<ul class="nav2" style="display:block;">
+							<li><a class="aaa n-a" href="#" onclick="nav2ss(0)" style="color:rgb(255, 255, 255);"><i class="ii01"></i>文件一</a>
+								<ul class="nav3 iii" style="display:block;">
+								<li><a class="n-a" href="#"><i class="iii01"></i>文档1</a></li>
+								<li><a class="n-a" href="#"><i class="iii01"></i>文档2</a></li>
+								</ul>
+							</li>
+							<li><a class="aaa n-a" href="#" onclick="nav2ss(1)"><i class="ii01"></i>文件一</a>
+								<ul class="nav3 iii" style="display:none;">
+								<li><a class="n-a" href="#"><i class="iii01"></i>文档1</a></li>
+								<li><a class="n-a" href="#"><i class="iii01"></i>文档2</a></li>
+								</ul>
+							</li>
+							<li><a class="aaa n-a" href="#" onclick="nav2ss(2)"><i class="ii01"></i>文件三</a>
+								<ul class="nav3 iii" style="display:none;">
+								<li><a class="n-a" href="#"><i class="iii01"></i>文档1</a></li>
+								<li><a class="n-a" href="#"><i class="iii01"></i>文档2</a></li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="n-li"><a href="#" class="aa n-a" onclick="navs(1);"><i class="i02"></i>个人收藏</a>
+						<ul class="nav2" style="display:none;">
+							<li><a class="aaa n-a" href="#" onclick="nav2ss(0)"><i class="ii01"></i>文件一</a>
+							</li>
+							<li><a class="aaa n-a" href="#" onclick="nav2ss(1)"><i class="ii01"></i>文件一</a>
+							</li>
+						</ul>
+
+					</li>
+					<li class="n-li"><a href="#" class="aa n-a" onclick="navs(2);"><i class="i02"></i>我的分享</a>
+						<ul class="nav2" style="display:none;">
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件一</a></li>
+							<li><a class="n-a ac-a" href="#"><i class="f-ii01"></i>文件二</a>
+							</li>
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件三</a></li>
+						</ul>
+					</li>
+					<li class="n-li"><a href="#" class="aa n-a" onclick="navs(3);"><i class="i03"></i>图库</a>
+						<ul class="nav2" style="display:none;">
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件一</a></li>
+							<li><a class="n-a ac-a" href="#"><i class="f-ii01"></i>文件二</a>
+							</li>
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件三</a></li>
+						</ul>
+					</li>
+					<li class="n-li"><a href="#" class="aa n-a" onclick="navs(4);"><i class="i02"></i>成长记录</a>
+						<ul class="nav2" style="display:none;">
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件一</a></li>
+							<li><a class="n-a ac-a" href="#"><i class="f-ii01"></i>文件二</a>
+							</li>
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件三</a></li>
+						</ul>
+					</li>
+					<li class="n-li"><a href="#" class="aa n-a" onclick="navs(5);"><i class="i04"></i>成长记录</a>
+						<ul class="nav2" style="display:none;">
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件一</a></li>
+							<li><a class="n-a ac-a" href="#"><i class="f-ii01"></i>文件二</a>
+							</li>
+							<li><a class="n-a" href="#"><i class="ii01"></i>文件三</a></li>
+						</ul>
+					</li>
+				</ul>
+		</nav>
+<script>
+	var nav=document.getElementById('nav');
+	/* 获取第一级li的所有标签 */
+	var lis=nav.getElementsByClassName('n-li');
+	/* 获取二级ul标签*/
+	var nav2s=nav.getElementsByClassName('nav2');
+	/* 获取三级ul标签*/
+	var nav3s=nav.getElementsByClassName('nav3');
+	function navs(n){
+		var aas=document.getElementsByClassName('aa');
+		nav2s[n].style.display=(nav2s[n].style.display=='none'? 'block':'none');
+		aas[n].style.color=(nav2s[n].style.display=='block'?'#fff':'#6E8095');
+		if(nav2s[n].style.display=='block'){
+			lis[n].className+=' active';
+		}else{
+			lis[n].className='n-li';
+		}
+
+	}	
+	var aaas=document.getElementsByClassName('aaa');
+	function nav2ss(n){
+		nav3s[n].style.display=(nav3s[n].style.display=='none'? 'block':'none');
+		
+		aaas[n].style.color=(nav3s[n].style.display=='block'?'#fff':'#6E8095');
+	}	
+</script>
+	<div class="right">
+		<h2 class="address">C站  / 个人报表 / 文件一／文档一</h2>
+		<section class="content">
+		<!-- inquiry start -->
+			<div class="inquiry clearfix">
+				<div class="ind">
+					<span>查询项</span>
+					<select class="short">
+						<option>第一项</option>
+					</select>
+				</div>
+				<div class="ind r-31">
+					<span>买方</span>
+					<select class="long">
+						<option>小A</option>
+					</select><br/>
+					<span>卖方</span>
+					<select class="long">
+						<option>小C</option>
+					</select>
+					<div class="huan"></div>
+				</div>
+				<div class="ind">
+					<span>日期</span>
+					<input type="date" class="long" />
+					<span>总耗时</span>
+					<select class="short">
+						<option>第一项</option>
+					</select><br/>
+					<span>人数</span>
+					<select class="short">
+						<option>第一项</option>
+					</select>
+					<span>成交项</span>
+					<select class="long">
+						<option>第一项</option>
+					</select>
+				</div>
+				<div class="ind">
+					<input type="submit" class="sea-btn" />
+				</div>
+			</div>
+		<!-- inquiry end -->
+			<div class="prices clearfix">
+				<span class="previous"><</span>
+				<ul class="p-items">
+<li><span>10:00<small>am</small></span><i>￥</i><b>1200</b></li>
+<li><span>10:00<small>am</small></span><i>￥</i><b>1200</b></li>
+<li><span>10:00<small>am</small></span><i>￥</i><b>1200</b></li>
+<li><span>10:00<small>am</small></span><i>￥</i><b>1200</b></li>
+<li><span>10:00<small>am</small></span><i>￥</i><b>1200</b></li>
+<li><span>10:00<small>am</small></span><i>￥</i><b>1200</b></li>
+				</ul>
+				<span class="next">></span>
+				<p class="history">
+					历史查询
+				</p>
+			</div>
+		<!-- prices end -->
+			<div class="success clearfix">
+				<h3>2016年4月份统计</h3>
+				<ul>
+					<li>
+						<span class="snum">13311</span>
+						<span class="cjl">成交量</span>
+						<div class="rect"></div>
+					</li>
+					<li><span class="snum">13311</span>
+						<span class="cjl">成交量</span>
+						<div class="rect"></div></li>
+					<li><span class="snum">13311</span>
+						<span class="cjl">成交量</span>
+						<div class="rect"></div></li>
+					<li><span class="snum">13311</span>
+						<span class="cjl">成交量</span>
+						<div class="rect"></div></li>
+				</ul>
+			</div>
+		<!-- 交易量结束 -->
+			<div class="project clearfix">
+				<div class="pleft">
+<h3>第一组项目</h3>
+<ul class="p-group clearfix">
+	<li class="tit clearfix">
+		<h4 class="t-active">项目一</h4>
+		<h4 >项目二</h4>
+		<h4>项目三</h4>
+		<h4>项目四</h4>
+		<h4>项目五</h4>
+	</li>
+	<li class="content01">
+		<div class="tab clearfix">
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+			<span>购买材料一</span>
+		</div>
+	</li>
+</ul>
+				</div>
+				<div class="pright">
+					<h3>第二组项目</h3>
+					<div class="content02">
+						<h4>标题</h4>
+						<p>项目报表三</p>
+						<div class="clearfix">
+							<span><b>价格</b><br/>￥158</span>
+							<span><b>负责人</b><br/>小A</span>
+						</div>
+						
+						<h4>项目描述</h4>
+						<p>该项目目前负责人是。。。。。。</p>
+						<hr/>
+						<input class="checkbox" checked type="checkbox"/>
+						<small>遵守保密协议</small>
+						<input type="submit" class="sea-btn" />
+					</div>
+				</div>
+			</div>
+		<!-- project结束 -->
+		<div class="project rili clearfix">
+			<div class="pright">
+				<h3>日历</h3>
+				<div class="content03">
+					<select>
+						<option>2016年</option>
+					</select><select>
+						<option>4月</option>
+					</select><select class="rq">
+						<option>标注日期</option>
+					</select><input type="submit" value="返回今天" />
+		<table>
+			<tr>
+				<th>一</th>
+				<th>二</th>
+				<th>三</th>
+				<th>四</th>
+				<th>五</th>
+				<th>六</th>
+				<th>日</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td><small>1</small><span class="cred">愚人节</span></td>
+				<td><small class="cred">2</small><span>廿五</span></td>
+				<td><small class="cred">3</small><span>廿六</span></td>
+			</tr>	
+			<tr>
+				<td><small>4</small><span>廿七</span></td>
+				<td><small>5</small><span class="cred">清明</span></td>
+				<td><small>6</small><span>廿九</span></td>
+				<td><small>7</small><span>三月</span></td>
+				<td><small>8</small><span>初二</span></td>
+				<td><small class="cred">9</small><span>初三</span></td>
+				<td><small class="cred">10</small><span>初四</span></td>
+			</tr>
+			<tr>
+				<td><small>11</small><span>初五</span></td>
+				<td><small>12</small><span>初六</span></td>
+				<td><small>13</small><span>初七</span></td>
+				<td><small>14</small><span>初八</span></td>
+				<td><small>15</small><span>初九</span></td>
+				<td><small>16</small><span>初十</span></td>
+				<td><small>17</small><span>十一</span></td>
+			</tr>
+			<tr>
+				<td><small>18</small><span>十二</span></td>
+				<td><small>19</small><span>十三</span></td>
+				<td><small>20</small><span>十四</span></td>
+				<td><small>21</small><span>十五</span></td>
+				<td><small>22</small><span>十六</span></td>
+				<td><small>23</small><span class="cred">十七</span></td>
+				<td><small>24</small><span class="cred">十八</span></td>
+			</tr>
+			<tr>
+				<td><small>25</small><span>十九</span></td>
+				<td><small>26</small><span>廿十</span></td>
+				<td><small>27</small><span>廿一</span></td>
+				<td><small>28</small><span>廿二</span></td>
+				<td><small>29</small><span>廿三</span></td>
+				<td><small>30</small><span class="cred">廿四</span></td>
+				<td></td>
+			</tr>		
+		</table>
+				</div>
+			</div>
+			<div class="pleft">
+				<h3>汽车行业品牌榜</h3>
+				<div class="content04">
+		<table >
+			<tr>
+				<th>排名</th>
+				<th>品牌</th>
+				<th>搜索指数</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="8"></meter></td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="7"></meter></td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="5"></meter></td>
+			</tr>
+			<tr>
+				<td>5</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+			<tr>
+				<td>7</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+			<tr>
+				<td>8</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+			<tr>
+				<td>9</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+			<tr>
+				<td>10</td>
+				<td>大众</td>
+				<td><span>48912001</span><meter min="0" max="10" value="6"></meter></td>
+			</tr>
+		</table>
+				</div>
+			</div>			
+		</div>
+		<!-- 日历结束 -->
+		</section>
+	</div>
+</section>
+</div>
+</body>
+</html>

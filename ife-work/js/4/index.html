@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#card{margin:100px 200px;}
+			#tit{width:210px;height:30px;}
+			a{
+				display:block;
+				float:left;
+				width:60px;
+				height:30px;
+				line-height:30px;
+				text-align:center;
+				background:#eee;
+				margin-right:10px;
+				color:#333;
+			}
+			.tit{
+				color:red;
+			}
+			a:last-child{
+				margin-right:0;
+				width:70px;
+			}
+			#content{width:210px;height:300px;background:red;}
+			#content div{display:none;}
+			.divs{
+				display:block !important;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="card">
+			<div id="tit">
+				<a href="#" onmouseover="show(0)">A菜单</a><a href="#" onmouseover="show(1)">B菜单</a><a href="#" onmouseover="show(2)">C菜单</a>
+			</div>
+			<div id="content">
+				<div class="divs">1111</div>
+				<div>2222</div>
+				<div>3333</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var aas = document.getElementById('tit').getElementsByTagName('a');
+			var divs  = document.getElementById('content').getElementsByTagName('div');
+			function show(num){
+				for(var i=0;i<divs.length;i++){
+					if(i==num){
+						aas[i].className="tit";
+						divs[i].className="divs";
+					}else{
+						aas[i].className="";
+						divs[i].className="";
+					}
+				}
+			}
+		</script>
+	</body>
+</html>

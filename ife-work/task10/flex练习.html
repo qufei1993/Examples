@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>flex练习</title>
+	<style>
+		.header{display: -webkit-flex;
+			-webkit-flex-flow:row-reverse;}
+		a{-webkit-flex:1;text-align: center;border:1px solid #ccc;}
+		a:hover{
+		}
+		.A,.C{
+			-webkit-flex:1;
+		}
+		.B{-webkit-flex:2;}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<a class="A" href="#"><span>主页A</span></a>
+		<a class="B" href="#"><span>关于B</span></a>
+		<a class="C" href="#"><span>存档C</span></a>
+	</div>
+</body>
+</html>

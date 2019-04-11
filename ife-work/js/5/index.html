@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>焦点图</title>		
+		<style type="text/css">
+			*{margin:0;padding:0;}
+			ul{
+				list-style:none;
+			}
+			.clearfix:after{
+				display: block;
+				content:'';
+				clear:both;
+			}
+			#banner{
+				border:5px solid #ccc;
+				width:750px;
+				height:260px;
+				overflow:hidden;
+				position:relative;
+				margin:100px auto;
+			}
+			#list{
+				position:absolute;
+				height:260px;
+				top:0;
+			}
+			#list li{
+				width:750px;
+				height:260px;
+				float:left;
+
+			}
+			#list li img{
+				width:100%;
+				height:100%;
+			}
+			#pre{
+				position:absolute;
+				display:block;
+				top:40%;
+				left:10px;
+				width:50px;
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				background:#999;
+				cursor:pointer;
+			}
+			#next{
+				position:absolute;
+				display:block;
+				top:40%;
+				right:10px;
+				width:50px;
+				height:50px;
+				line-height:50px;
+				text-align:center;
+				background:#999;
+				cursor:pointer;
+			}
+			#pre:hover,#next:hover{
+				color:#fff;
+			}
+			#buttons{
+				position:absolute;
+				bottom:10px;
+				left:40%;
+			}
+			#buttons span{
+				display:inline-block;
+				width:25px;
+				height:25px;
+				line-height:25px;
+				text-align:center;
+				background:gray;
+				color:#fff;
+				cursor:pointer;
+				border-radius:25px;
+			}
+		
+			.active{
+				background:rgba(247,120,37,1) !important;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="banner">
+			<ul id="list" class="clearfix" style="left:0;transition:left 0.6s;">
+				<li><img src="images/banner01.jpg"/></li>
+				<li><img src="images/banner02.jpg"/></li>
+				<li><img src="images/banner03.jpg"/></li>
+				<li><img src="images/banner04.jpg"/></li>
+			</ul>
+			<a id="pre">左</a>
+			<a id="next">右</a>
+			<div id="buttons">
+				<span onclick="btnClick(0)" class="active">1</span>
+				<span onclick="btnClick(1)">2</span>
+				<span onclick="btnClick(2)">3</span>
+				<span onclick="btnClick(3)">4</span>
+			</div>
+		</div>
+		<script>
+			var btns;
+			var liWidth;
+			var timer;
+			var values;
+			var moveValue;
+			var ulWidth;
+			var lis;
+			window.onload=function(){
+				var list = document.getElementById('list');
+					lis = list.getElementsByTagName('li');
+				var pre = document.getElementById('pre');
+				var next = document.getElementById('next');
+					btns = document.getElementById('buttons').getElementsByTagName('span');
+					liWidth = lis[0].offsetWidth;
+					ulWidth = liWidth*lis.length;
+					list.style.width = ulWidth+'px';
+				//左右键滚动
+				pre.onclick=function(){
+					preNext(animation01);
+				}
+				next.onclick=function(){
+					preNext(animation);
+				}
+				function preNext(values){
+					clearInterval(timer);
+					setTimeout(values,1);
+					timer = setInterval(animation,5000);
+				}
+				//定时器
+				moveValue = parseInt(list.style.left);
+				timer = setInterval(animation,5000);
+
+			}
+			//按钮滚动
+			function btnClick(num){
+				for(var i=0;i<btns.length;i++){
+					if(num==i){
+						clearInterval(timer);
+						btns[i].className="active";
+						list.style.left = -i*liWidth+'px';
+						values=parseInt(list.style.left);
+						moveValue = values;
+						timer = setInterval(animation,5000);
+					}else{
+						btns[i].className="";
+					}
+				}	
+			}
+			function animation(){
+				if(moveValue==(-(ulWidth-liWidth))){
+					activeClass("");
+					moveValue=0;
+				}else{
+					//在每次计算新值前 先清除上一次的信息
+					activeClass("");
+					moveValue-=liWidth;
+				}
+				activeClass("active");
+				list.style.left = moveValue+'px';
+			}
+			
+			function animation01(){
+				if(moveValue==0){
+					activeClass("");
+					moveValue-=ulWidth-liWidth;
+				}else{
+					//在每次计算新值前 先清除上一次的信息
+					activeClass("");
+					//btns[moveValue/-liWidth].className="";
+					moveValue+=liWidth;
+				}
+				activeClass("active");
+				list.style.left = moveValue+'px';
+			}
+			//添加active类
+			function activeClass(values){
+				btns[moveValue/-liWidth].className=values;
+			}
+		</script>
+	</body>
+</html>

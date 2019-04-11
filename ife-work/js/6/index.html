@@ -1,0 +1,16 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>Ajax封装</title>
+	<script src="demo.js"></script>
+</head>
+<body>
+	<h1>Ajax封装</h1>
+	在封装Ajax时需要注意的几点：<br/>
+	<p>1.在IE6及早期版本中有兼容性<p/>
+	<p>2.以get方式提交 在ie中浏览器会认为没有进行操作，在URL中需要加入Math.random()<p/>
+	<p>3.已post方式提交需要触发readystatechange事件，然后检测readystate属性，包含5个值</p>
+	<p>4.当data传输的数据中出现 & 等特殊字符 需要编码encodeURIComponent()处理</p>
+</body>
+</html>

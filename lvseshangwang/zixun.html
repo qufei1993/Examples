@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="style/zixun.css" rel="stylesheet" type="text/css" />
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/zzsc.js"></script>
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-size: 24px;
+	color: #000080;
+}
+.STYLE3 {
+	font-size: 20px;
+	color: #830E25;
+	line-height: 28px;
+}
+.STYLE4 {
+	font-size: 9px;
+	color: #3366FF;
+}
+.STYLE5 {
+	font-size: 18px;
+	color: #0000CC;
+	font-weight: bold;
+}
+.STYLE6 {
+	font-size: 12px;
+	line-height: 28px;
+}
+.STYLE7 {
+	font-size: 12px;
+	color: #FF0000;
+}
+.STYLE10 {
+	font-size: 14;
+	line-height: 23px;
+}
+-->
+</style>
+
+
+
+
+</head>
+
+<body>
+<div id="container">
+ <div id="header">
+    <div class="logo"><img src="images/logo.png" width="257" height="89" /></div>
+      <div class="menu">
+        <ul>
+                 <li><a href="page.html">首页</a></li>
+          <li class="tiao"></li>
+                 <li> <a href="zixun.html">最新资讯</a></li>
+          <li class="tiao"></li>
+           <li > <a href="health.html">健康之家</a></li>
+          <li class="tiao"></li>
+                 <li ><a href="zhuanti.html">专题策划</a></li>
+          <li class="tiao"></li>
+         
+                  <li> <a  href="wangluo.html">网络安全</a><a  href="#"  ></a></li>
+          <li class="tiao"></li>
+                 <li><a href="User/liuyan.aspx" >在线留言</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="tu"><img src="images/zixun_tu.jpg" width="1024" height="260" /></div>
+  <div class="STYLE3" id="rementitle">
+    <div align="left">热门</div>
+  </div>
+  <div id="remen">
+ <ul>
+  <li><a href="#" > IOS咨询</a></li>
+   <li><a href="#" >安卓咨询</a></li>
+    <li> <a href="#" >Windows 咨询</a></li>
+     <li> <a href="#" >Win8 App</a></li>
+      <li> <a href="#" >office</a></li>
+       
+  </ul>
+  </div>
+<div id="weizhi">您的位置：<a href="page.html">绿色家园</a>&gt;最新资讯</div>
+ <div id="main">
+     <div class="leftbox">
+       <div class="title">           
+         <div align="left">
+           <span class="STYLE1">最新资讯</span> </div>
+       </div>
+        <div class="content">  
+        
+      <div id="zzsc">
+  <ul id="img" name="img">
+    <li><a ><img src="images/zzsc1.png" width="330" height="220" /></a></li>
+    <li><a ><img src="images/zzsc2.gif" width="330" height="220" /></a></li>
+    <li><a><img src="images/zzsc3.jpg" width="330" height="220" /></a></li>
+    <li><a><img src="images/zzsc4.jpg" width="330" height="220" /></a></li>
+    <li><a ><img src="images/zzsc5.jpg" width="330" height="220" /></a></li>
+  </ul>
+  <ul id="num">
+    <li class="hover">1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+  </ul>
+</div>  
+        
+<script type="text/javascript">
+var img = document.getElementById("img");
+var num = document.getElementById("num");
+var ali = img.getElementsByTagName("li");
+var oli = num.getElementsByTagName("li");
+var time = null
+zzscing = document.getElementById("zzsc");
+img.style.width = ali.length * 339 + "px", inow = 0;
+for (var i = 0; i < oli.length; i++) {
+	oli[i].index = i
+	oli[i].onmouseover = function() {
+		inow = this.index;
+		tab();
+		window.clearInterval(time)
+	}
+	oli[i].onmouseout = function() {
+		time = window.setInterval(autoPlay, 2000)
+	}
+}
+
+function tab() {
+	for (var i = 0; i < oli.length; i++) {
+		oli[i].className = ""
+	}
+	oli[inow].className = "hover"
+	startMove(img, {
+		left: -inow * 330
+	}, 'buffer')
+}
+
+function autoPlay() {
+	inow++;
+	if (inow >= ali.length) {
+		inow = 0
+	}
+	tab();
+}
+time = window.setInterval(autoPlay, 2000)
+  </script>
+
+<div class="z1">
+           <ul>
+           <li><a class="nav1" href="#"></a> </li>
+               <li><a class="nav2" href="#"></a> </li>
+                   <li><a  class="nav3" href="#"></a> </li>
+                       <li><a class="nav4" href="#"></a> </li>
+           </ul>
+     </div>
+       </div>
+        <div class="content01">
+           <div class="title"><span class="STYLE3">12306手机版来了！12306手机客户端体验</span><br/>
+                 绿色家园为您提供最新资讯
+          </div><br/>
+          <div class="title01" >
+          <div class="left">
+          <ul>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>沉迷游戏不吃不喝不眠</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="zixun/zixun03.html"><span class="STYLE4">▶</span>少年跑网吧三天猝死路边</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="zixun/zixun01.html"><span class="STYLE4">▶</span>新度娘程序员上任 </a></div>
+             </li>
+             <li>
+               <div align="left"><a href="zixun/zixun04.html"><span class="STYLE4">▶</span>女神地图来袭？</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="zixun/zixun05.html"><span class="STYLE4">▶</span>健康使用电脑小常识</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>专家解读孩子为何迷网络</a></div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>百度开卖99元小路由器</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>岛国专用QQ日本版发布</a></div>
+              </li>
+             
+          </ul>
+          </div>
+                 <div class="right">
+                   <ul>
+             <li>
+               <div align="left"><a href="zixun/zixun02.html"><span class="STYLE4">▶</span>沉迷游戏不吃不喝不眠</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>少年跑网吧三天猝死路边</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>新度娘程序员上任 </a></div>
+             </li>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>12306手机版重新上线</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>健康使用电脑小常识</a></div>
+             </li>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>专家解读孩子为何迷网络</a></div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>百度开卖99元小路由器</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>岛国专用QQ日本版发布</a></div>
+              </li>
+          </ul>
+            </div>
+          </div>
+        </div>
+       <div class="leftbox01">
+            <div class="title STYLE5">软件论坛</div>
+            <div class="content"> <span class="STYLE3">Win7该不该延寿？微软也很纠</span></div>
+           <div class="tu"><img src="images/zixun_01.jpg" width="96" height="92" /><br/>
+            <span class="STYLE6">            金刚你看到没？</span></div>  
+            <div class="title01">
+                <ul>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>数量有点大!微软10年791</a>个补丁</div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>win9长这样?桌面开始屏幕合体</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>超赞!浏览器中隐藏的八项超能力</a></div>
+              </li>
+              <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>4G终于来啦!你会选哪家运营商</a></div>
+              </li>
+          </ul>
+         </div>
+            <div class="tu"><a href="images/zixun_02.jpg" target="_blank"><img src="images/zixun_02.jpg" width="93" height="87" longdesc="images/zixun_02.jpg" /></a> <span class="STYLE6"><a href="#">非常创意</a></span>           </div>  
+         <div class="title01">
+            <ul>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>数量有点大!微软10年791</a>个补丁</div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>win9长这样?桌面开始屏幕合体</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>超赞!浏览器中隐藏的八项超能力</a></div>
+              </li>
+              <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>4G终于来啦!你会选哪家运营商</a></div>
+              </li>
+          </ul>
+         </div>
+            <div class="tu"><a href="images/zixun_03.jpg"><img src="images/zixun_03.jpg" width="93" height="90" /></a><span class="STYLE6">大学生party太开</span></div>  
+            <div class="title01">
+             <ul>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>数量有点大!微软10年791</a>个补丁</div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>win9长这样?桌面开始屏幕合体</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>超赞!浏览器中隐藏的八项超能力</a></div>
+              </li>
+              <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>4G终于来啦!你会选哪家运营商</a></div>
+              </li>
+          </ul>
+            </div>
+       </div>
+        
+        
+       <div class="leftbox01_right">
+         <div class="title STYLE5">应用•评测</div>
+         <div class="title01 STYLE7">出行必备APP推荐</div>
+         <div class="content"> <span class="STYLE3">Win7该不该延寿？微软也很纠</span></div>
+         <div class="title02">
+         <ul>
+         <li><a href="#">工具</a></li> <li class="tiao"></li>
+         <li><a href="#">观点</a></li> <li class="tiao"></li>
+         <li><a href="#">新品</a></li> <li class="tiao"></li>
+         <li><a href="#">Win8</a></li> <li class="tiao"></li>
+         <li><a href="#">Win8</a></li> <li class="tiao"></li>
+         </ul>
+         </div>
+         <div class="title03">
+           <ul>
+             <li>
+               <div align="left"><a href="#">猎豹清理大师4.0首测</a></div>
+              </li>
+              <li>
+               <div align="left"><a href="#">曝工资软件爆红网络</a></div>
+              </li>
+             <li>
+              <div align="left"><a href="#">IT棱镜为何软件变臃肿</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">官方12306手机版上线</a></div>
+             </li>
+            <li>
+              <div align="left"><a href="#" >QQ2013SP6体验版发布</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">QQ超级会员重磅公布</a></div>
+             </li>
+             <li>
+              <div align="left" ><a href="#">XPWin8.1的跨时代评</a>论</div>
+             </li>
+                 <li>
+              <div align="left"><a href="#">QQ超级会员重磅公布</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">Win8.1免费正式版下载</a></div>
+              </li>
+                  <li>
+              <div align="left"><a href="#">QQ超级会员特权公布</a></div>
+             </li>
+         
+          </ul>
+         </div>
+           <div class="title STYLE5">IOS•Android</div>
+         <div class="title01 STYLE7">IT/互联网技术视频教程</div>
+         <div class="content"> <span class="STYLE3">微信会员终于来了微信5.1新特性一览</span></div>
+         <div class="title02">
+         <ul>
+         <li><a href="#">工具</a></li> <li class="tiao"></li>
+         <li><a href="#">观点</a></li> <li class="tiao"></li>
+         <li><a href="#">新品</a></li> <li class="tiao"></li>
+         <li><a href="#">Win8</a></li> <li class="tiao"></li>
+         <li><a href="#">Win8</a></li> <li class="tiao"></li>
+         </ul>
+         </div>
+         <div class="title03">
+           <ul>
+             <li>
+               <div align="left"><a href="#">猎豹清理大师4.0首测</a></div>
+              </li>
+              <li>
+               <div align="left"><a href="#">曝工资软件爆红网络</a></div>
+              </li>
+             <li>
+              <div align="left"><a href="#">IT棱镜为何软件变臃肿</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">官方12306手机版上线</a></div>
+             </li>
+            <li>
+              <div align="left"><a href="#" >QQ2013SP6体验版发布</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">QQ超级会员重磅公布</a></div>
+             </li>
+             <li>
+              <div align="left" ><a href="#">XPWin8.1的跨时代评</a>论</div>
+             </li>
+                 <li>
+              <div align="left"><a href="#">QQ超级会员重磅公布</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">Win8.1免费正式版下载</a></div>
+              </li>
+                  <li>
+              <div align="left"><a href="#">QQ超级会员特权公布</a></div>
+             </li>
+         
+          </ul>
+         </div>
+       </div>
+       
+       
+       <div class="leftbox01">
+            <div class="title STYLE5">QQ个性签名</div>
+            <div class="content"> <span class="STYLE3">Win7该不该延寿？微软也很纠</span></div>
+           <div class="tu"><img src="images/zixun_12.jpg" width="96" height="92" /><br/>
+            <span class="STYLE6">            可爱小丸子卡通头</span></div>  
+            <div class="title01">
+                <ul>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>好看的QQ分组图案闻得到你的快</a></div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>假若当我们没有错过，该多好</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>喜欢一个人 就赋予了他伤害你的</a></div>
+              </li>
+              <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>把我的心都给你 你不用再还我了</a></div>
+              </li>
+          </ul>
+         </div>
+            <div class="tu"><a href="images/zixun_02.jpg" target="_blank"><img src="images/zixun_13.jpg" width="93" height="87" longdesc="images/zixun_02.jpg" /></a> <span class="STYLE6">清新女生头像</span>           </div>  
+            <div class="title01">
+            <ul>
+             <li>
+               <div align="left"><a href="#"><span class="STYLE4">▶</span>霸气的网名_你若安好 哎呦我草</a></div>
+             </li>
+             <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>你过你的生活 安静地住在我心里</a></div>
+              </li>
+            <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>个性签名_迅雷下载不到你所需的</a></div>
+              </li>
+              <li>
+              <div align="left"><a href="#"><span class="STYLE4">▶</span>有时最好的安慰就是无言的陪伴</a></div>
+              </li>
+          </ul>
+         </div>
+              </div>
+              <div class="leftbox01_right">
+         <div class="title STYLE5">设计</div>
+         <div class="title01 STYLE7">2013网络流行语</div>
+         <div class="content"> <span class="STYLE3">中国好设计小米盒子与手机获红星奖金奖</span></div>
+         <div class="title02">
+         <ul>
+         <li><a href="#">欣赏</a></li> <li class="tiao"></li>
+         <li><a href="#">教程</a></li> <li class="tiao"></li>
+      <li><a href="#">欣赏</a></li> <li class="tiao"></li>
+          <li><a href="#">欣赏</a></li> <li class="tiao"></li>
+        <li><a href="#">欣赏</a></li> <li class="tiao"></li>
+           <li><a href="#">教程</a></li> <li class="tiao"></li>
+              <li><a href="#">教程</a></li> <li class="tiao"></li>
+                 <li><a href="#">教程</a></li> <li class="tiao"></li>
+         </ul>
+         </div>
+         <div class="title03">
+           <ul>
+             <li>
+               <div align="left"><a href="#">幽默的周杰伦成长插画</a></div>
+              </li>
+              <li>
+               <div align="left"><a href="#">爸爸去哪萌宝长大模样</a></div>
+              </li>
+             <li>
+              <div align="left"><a href="#">2013爆笑奇葩产品设计</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">超美的手机信号可视图</a></div>
+             </li>
+            <li>
+              <div align="left"><a href="#" >立体面孔变2D面化妆</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">2013全球最惊奇的照片</a></div>
+             </li>
+             <li>
+              <div align="left" ><a href="#">XPWin8.1的跨时代评</a>论</div>
+             </li>
+                 <li>
+              <div align="left"><a href="#">QQ超级会员重磅公布</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">Win8.1免费正式版下载</a></div>
+              </li>
+                  <li>
+              <div align="left"><a href="#">QQ超级会员特权公布</a></div>
+             </li>
+              <li>
+               <div align="left"><a href="#">幽默的周杰伦成长插画</a></div>
+              </li>
+              <li>
+               <div align="left"><a href="#">爸爸去哪萌宝长大模样</a></div>
+              </li>
+             <li>
+              <div align="left"><a href="#">2013爆笑奇葩产品设计</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">超美的手机信号可视图</a></div>
+             </li>
+            <li>
+              <div align="left"><a href="#" >立体面孔变2D面化妆</a></div>
+             </li>
+              <li>
+              <div align="left"><a href="#">2013全球最惊奇的照片</a></div>
+             </li>
+         
+          </ul>
+         </div>
+        
+       </div>
+       
+       
+       
+     </div>
+     <div class="rightbox">
+     <div class="title" align="left">
+        <span class="STYLE1"> 软件热门文章</span>
+     </div>
+     <div class="content">
+     <ul>
+     <li class="tou">1</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+      <li class="tou">2</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+      <li class="tou">3</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+      <li class="tou01">4</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+     <li class="tou01">5</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+     <li class="tou01">6</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+     <li class="tou01">7</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+      <li class="tou01">8</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+      <li class="tou01">9</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+      <li class="tou01">10</li>
+     <li><a href="#">Win7大限将至，微软证实Win7已停止销售</a></li>
+     </ul>
+     </div>
+     <div class="content01">
+     <div class="title STYLE5" align="left">高清壁纸</div>
+     <div class="content02">
+       <table width="293" height="366" border="0" cellpadding="0" cellspacing="0">
+         <tr>
+           <td width="148" height="152"><a href="images/zixun_04.jpg" target="_blank"><img src="images/zixun_04.jpg" width="141" height="139" border="0" /></a></td>
+           <td width="148" height="152" valign="middle"><a href="images/zixun_05.jpg" target="_blank"><img src="images/zixun_05.jpg" width="141" height="139" border="0" /></a></td>
+         </tr>
+         <tr>
+           <td height="32"><div align="center">清新女生头像</div></td>
+           <td><div align="center">高清桌面壁纸</div></td>
+         </tr>
+         <tr>
+           <td width="148" height="152"><a href="images/zixun_06.jpg" target="_blank"><img src="images/zixun_06.jpg" width="141" height="139" border="0" /></a></td>
+           <td width="148" height="152"><a href="images/zixun_08.jpg" target="_blank"><img src="images/zixun_07.jpg" width="141" height="139" border="0" /></a></td>
+         </tr>
+         <tr>
+           <td height="44"><div align="center">唯美图书馆美女壁纸</div></td>
+           <td> <div align="center">汽车桌面壁纸 </div></td>
+         </tr>
+       </table>
+     </div>
+     <div class="content03">
+         <div class="title">
+         <div class="STYLE5" style="float:left">微博推荐</div>
+         <ul>
+         <li><a href="#"> 更多>></a></li>
+         </ul>
+         </div>
+         <div class="content">
+          <div class="contentleft">
+            <div align="center"><a href="#"><img src="images/zixun_08.jpg" width="67" height="64" border="0" /></a></div>
+            <div align="center" style="padding-top:10px;"><a href="#"><img src="images/zixun_09.jpg" width="62" height="23" border="0" /></a></div>
+            </div>
+            <div class="contentright">
+            <ul>
+            <li><a href="#">新浪河南健康</a></li><li class="tou"><img src="images/zixun_10.jpg" width="22" height="20" /></li>
+            </ul>
+            <br />
+            <br/>
+            <span class="STYLE10">小小手机套竟然能致癌?<br/>
+            进日,这一说法在网上被热<br/>传...<a href="#">分享</a> </span></div>
+            <div class="contentleft">
+            <div align="center"><a href="#"><img src="images/zixun_11.jpg" width="67" height="64" border="0" /></a></div>
+            <div align="center" style="padding-top:10px;"><a href="#"><img src="images/zixun_09.jpg" width="62" height="23" border="0" /></a></div>
+            </div>
+            <div class="contentright">
+            <ul>
+            <li><a href="#">sina白话中医</a></li><li class="tou"><img src="images/zixun_10.jpg" width="22" height="20" /></li>
+            </ul>
+            <br />
+            <br/>
+            <span class="STYLE10">高脂血症属气虚,阳虚者可<br/>
+            以选用：首乌、玉竹、女贞<br/>子、灵芝等...<a href="#">分享</a> </span></div>
+          </div>
+          
+         </div>
+     </div>
+     </div>
+    
+     </div>
+  </div>
+  <div id="buttom">
+    <img src="images/bottom.jpg" width="1024" height="40" /><br/><br/>
+  版权所有：Qu Zhen Fei 2013<br/>
+    地址：河南新乡市金穗大道191号. 电话：0373-666666 邮编：453003 
+  </div>
+</div>
+</body>
+</html>

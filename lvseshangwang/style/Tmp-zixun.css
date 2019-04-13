@@ -1,0 +1,362 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../images/heade.jpg);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-top: 0px;
+}
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+	height:auto;
+    text-align:center;
+	
+}
+#header
+{
+ width: 1024px;
+ height:100px;
+}
+#header .logo
+{
+margin-left:20px;
+margin-top:5px;
+padding:0px;
+float:left;
+width:257px;
+height:89px;
+ }
+ #header .menu
+ { text-align:left;
+  margin-right:5px;
+  margin-top:35px;
+  float:right;
+  width:677px;
+  height:35px;
+background-image: url(../images/menu.jpg);
+ }
+ ul
+{  float:left;
+    margin: 0px;
+    padding:0px;
+    list-style:none;
+}
+#header .menu li
+
+{   float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 110px;
+    text-align:center;
+	
+}
+#header .menu a
+{  
+  
+  color: black;
+  text-decoration:none;
+ }
+
+#header .menu li a:hover
+ { 
+   position:relative;
+   top:2px;
+   left:1px;
+   color:red;
+  }
+  #header .menu .tiao
+{ width:1px;
+    height:18px;
+    background-color:Green;
+    margin-top:5px;
+    margin-bottom:5px;
+    
+}
+
+#tu
+{
+	width:1024px;
+	height:260px;
+	
+}
+#rementitle
+{
+float:left;
+padding-top:5px;
+width:60px;
+height:30px;
+}
+#remen
+{float:right;
+height:30px;
+width:964px;
+}
+#remen ul
+{
+float:left;
+list-style:none;
+}
+#remen li
+
+{  margin-left:0px; 
+float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 100px;
+    text-align:center;	
+}
+#remen a
+{  
+  
+  color: black;
+  text-decoration:none;
+ }
+
+#remen li a:hover
+ { 
+   position:relative;
+   top:1px;
+   left:1px;
+   color:red;
+  }
+#weizhi
+  {
+	float:left;
+	width:1024px;
+	height:30px;
+	text-align:left;
+	background-color: #CCFFCC;
+  }
+#main
+{
+float:left;
+width:1024px;
+height:auto;
+
+}
+#main .leftbox
+{
+	float:left;
+	width:710px;
+	height:auto;
+}
+#main .leftbox .title
+{   float:left;
+	width:710px;
+	height:30px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0000FF;
+}
+#main .leftbox .content
+{ margin-top:5px;
+  float:left;
+  width:690px;
+  height:auto;
+  padding-left:10px;
+ padding-right:10px;
+ 
+}
+#main .leftbox .content01
+{ margin-top:5px;
+  float:left;
+  width:690px;
+  height:100px;;
+  padding-left:10px;
+ padding-right:10px;
+ 
+}
+.nav
+{
+width:600px;
+height:2px;
+overflow:hidden; 
+background-color:#CCCCCC;
+margin-left:50px;
+}
+  #main .rightbox
+{
+float:left;
+margin-left:10px;
+width:300px;
+height:auto;
+
+}
+#main .rightbox .title
+{
+float:left;
+width:300px;
+height:30px;
+     border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0000FF;
+}
+#main .rightbox .content
+{
+ 
+ float:left;
+ width:300px;
+ height:300px;
+ text-align:left;
+}
+#main .rightbox .content li
+{
+ float:left;
+ height:30px;
+ width:270px;
+ line-height:30px;
+}
+#main .rightbox .content .tou
+{
+	padding-left:5px;
+	float:left;
+	width:20px;
+	height:30px;
+	font-size:16px;
+	color:#FF0000;
+	font-style: oblique;
+	font-weight: bold;
+}
+#main .rightbox .content .tou01
+{
+	padding-left:5px;
+	float:left;
+	width:20px;
+	height:30px;
+	font-size:16px;
+	color:#333333;
+	font-style: oblique;
+	font-weight: bold;
+}
+#main .rightbox .content a
+{
+
+  text-decoration:none;
+  font-size:14px;
+  color:black;
+}
+#main .rightbox .content a:hover
+{
+	top:1px;
+	left:1px;
+	color:#CC0033;
+	text-decoration: underline;
+}
+#main .rightbox .content01
+{
+ float:left;
+ width:300px;
+ height:auto;
+ margin-top:10px;
+}
+#main .rightbox .content01 .title
+{
+float:left;
+ padding-top:10px;
+ width:300px;
+ height:20px;
+}
+#main .rightbox .content01 .content02
+{
+
+ float:left;
+ width:300px;
+ height:400px;
+}
+#main .rightbox .content03
+{
+float:left;
+width:300px;
+height:auto;
+}
+#main .rightbox .content03 .title
+{   padding-top:0px;
+	width:300px;
+	padding-top:10px;
+	height:20px;
+	border-bottom-color:#666666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+#main .rightbox .content03 .title ul
+{
+float:right;
+}
+#main .rightbox .content03 .title li
+{  
+    float:right;
+	width:70px;
+	height:20px;   
+}
+#main .rightbox .content03 .title a
+{
+text-decoration:none;
+color:black;
+}
+#main .rightbox .content03 .title a:hover
+{
+text-decoration:underline;
+color:#CC0033;
+}
+#main .rightbox .content03 .content
+{
+width:300px;
+height:auto;
+float:left;
+}
+#main .rightbox .content03 .content .contentleft
+{
+margin-top:10px;
+width:100px;
+height:100px;
+float:left;
+}
+#main .rightbox .content03 .content .contentright
+{
+margin-top:10px;
+margin-left:20px;
+width:180px;
+height:100px;
+float:left;
+font-size:14px;
+
+}
+#main .rightbox .content03 .content .contentright li
+{
+width:85px;
+height:30px;
+float:left;
+}
+#main .rightbox .content03 .content .contentright a
+{
+width:100px;
+height:30px;
+font-size:14px;
+}
+#main .rightbox .content03 .content .contentright a:hover
+{
+top:1px;
+height:1px;
+text-decoration:underline;
+}
+#main .rightbox .content03 .content .contentright .tou
+{
+padding:5px;
+width:20px;
+height:20px;
+float:left;
+}
+#buttom
+{
+	float:left;
+	width:1024px;
+	height:auto;
+	text-align:center;
+	
+}

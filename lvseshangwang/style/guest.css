@@ -1,0 +1,213 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../images/heade.jpg);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+}
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+	height:952px;
+    text-align:center;
+	
+}
+#header
+{
+ width: 1024px;
+ height:100px;
+}
+#header .logo
+{
+margin-left:30px;
+margin-top:5px;
+padding:0px;
+float:left;
+width:257px;
+height:89px;
+ }
+ #header .menu
+ { text-align:left;
+  margin-right:5px;
+  margin-top:35px;
+  float:right;
+  width:677px;
+  height:35px;
+background-image: url(../images/menu.jpg);
+ }
+ ul
+{  float:left;
+    margin: 0px;
+    padding:0px;
+    list-style:none;
+}
+#header .menu li
+
+{   float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 110px;
+    text-align:center;
+	}
+#header .menu a
+{  
+  
+  color: black;
+  text-decoration:none;
+ }
+
+#header .menu li a:hover
+ { 
+   position:relative;
+   top:2px;
+   left:1px;
+   color:red;
+  }
+  #header .menu .tiao
+{ width:1px;
+    height:18px;
+    background-color:Green;
+    margin-top:5px;
+    margin-bottom:5px;
+    
+}
+
+#tu
+{
+	width:1024px;
+	height:257px;
+}
+#shijian
+{
+    padding-top: 10px;
+    width: 1024px;
+    height: 30px;
+    text-align: left;
+    background-image:url(../images/health_shijian.jpg);
+}
+#main
+{
+margin-top:2px;
+width:1024px;
+height:auto;
+
+}
+#main .leftbox
+{float:left;
+width:300px;
+height:515px;
+
+}
+#main .leftbox .leftbox01
+{
+text-align:left;
+float:left;
+width:300px;
+height:auto;
+
+
+
+}
+#main .leftbox .leftbox01 .title
+{
+
+ width:300px;
+ height:30px;
+}
+#main .leftbox .leftbox01 .content
+{
+    border: 1px solid #96E79A;
+    width: 298px;
+    height: 220px;
+    background-color: #CCFF99;
+}
+.leftbox01 .content ul
+{margin-top:20px;
+ list-style:none;
+}
+.leftbox01  .content li
+{
+ margin-left:20px;
+ line-height:35px;
+ font-size:23px;
+ color: black;
+}
+.leftbox01  .content a
+{
+ text-decoration:none;
+}
+.leftbox01  .content a:hover
+ { 
+   position:relative;
+   top:2px;
+   left:1px;
+   color:red;
+  }
+#main .leftbox .leftbox02
+{
+text-align:left;
+float:left;
+margin-top:12px;
+width:300px;
+height:248px;
+
+}
+#main .leftbox .leftbox02 .title
+{
+
+width:300px;
+height:30px;
+background-color:#CCFF66;
+}
+#main .leftbox .leftbox02 .content
+{
+    width:298px;
+    height: 216px;
+    background-color: #CCFF99;
+    border: 1px solid #96E79A;
+}
+#main .rightbox
+{
+    margin-left: 10px;
+    text-align: left;
+    float: left;
+    width: 712px;
+    height: 512px;
+    background-image: url('../images/Rightbox.jpg');
+}
+#tab
+{
+	margin:0px;
+	padding:0px;
+	border: 0px solid #333333;
+	width:547px;
+	height:430px;
+	margin-left:83px;
+	margin-top:38px;
+	padding-right:5px;
+}
+.btok
+{
+	font-size: 22px;
+	font-family: "宋体";
+	color: #0000FF;
+	text-align:center;
+	text-decoration: blink;
+}
+.name
+{
+	font-family: "宋体";
+	font-size: 15px;
+}
+#buttom
+{
+	float:left;
+	width:100%;
+	height:100px;
+	
+}

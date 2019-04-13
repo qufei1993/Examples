@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>网络安全</title>
+<link href="../style/Tmp_wangluo.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.button {
+	height: 40px;
+	width: 81px;
+	background-image: url(images/health_img02.jpg);
+}
+.STYLE1 {font-size: 9pt}
+.STYLE2 {
+	font-family: "宋体";
+	font-size: 15px;
+	line-height: 27px;
+	text-indent: 2pc;
+}
+-->
+</style>
+</head>
+
+<body>
+<div id="container">
+ <div id="header">
+    <div class="logo"><img src="../images/logo.png" width="257" height="89" /></div>
+<div class="menu">
+        <ul>
+                 <li ><a href="../page.html" >首页</a></li>
+          <li class="tiao"></li>
+                 <li> <a href="../zixun.html" >最新资讯</a></li>
+          <li class="tiao"></li>
+           <li > <a href="../health.html" >健康之家</a></li>
+          <li class="tiao"></li>
+                 <li ><a href="../zhuanti.html">专题策划</a></li>
+          <li class="tiao"></li>
+         
+                  <li> <a  href="../wangluo.html">网络安全</a></li>
+          <li class="tiao"></li>
+                 <li><a href="../guest.html" >在线留言</a></li>
+      </ul>
+    </div>
+</div>
+<div id="tu"><img src="../images/health_tu.jpg" width="1024" height="258" /></div>
+  <div id="main"> 
+   <div class="leftbox"><img src="../images/wangluo.jpg" width="240" height="502" border="0" usemap="#Map" />
+<map name="Map" id="Map">
+  <area shape="rect" coords="95,185,165,199" href="../wangluo/wangluo02.html" /><area shape="rect" coords="92,133,162,147" href="../wangluo/wangluo03.html" /><area shape="rect" coords="93,83,163,97" href="../zhuanti/zhuanti03.html" />
+  <area shape="rect" coords="93,36,163,50" href="../wangluo/wangluo01.html" />
+</map>
+   </div>
+   <!-- TemplateBeginEditable name="EditRegion1" -->
+   <div class="rightbox">
+     <div class="title">网络安全</div>
+     <div class="title01">当前位置：<a href="../page.html">首页</a>>>网络安全</div>
+     <div class="content"> 
+       
+     </div>
+   </div >
+   <!-- TemplateEndEditable --></div>
+<div id="bottom" align="center"> <img src="../images/bottom.jpg" width="1024" height="40" /><br/>
+      <br/>
+  版权所有：Qu Zhen Fei 2013<br/>
+    地址：河南新乡市金穗大道191号. 电话：0373-666666 邮编：453003 
+  </div>
+</div>
+</body>
+</html>

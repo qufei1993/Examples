@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Adm_Master" %>
+<!DOCTYPE aspx PUBLIC "-//W3C//DTD Xaspx 1.0 Transitional//EN" "http://www.w3.org/TR/xaspx1/DTD/xaspx1-transitional.dtd">
+<aspx xmlns="http://www.w3.org/1999/xaspx">
+<head>
+<meta http-equiv="Content-Type" content="text/aspx; charset=utf-8" />
+<title>管理员页面</title>
+<link href="style/Master.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.STYLE1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	line-height: 30px;
+}
+.STYLE3 {
+	font-size: 24px;
+	color: #006633;
+}
+.STYLE5 {font-size: 20px}
+.STYLE6 {font-size: 36px}
+.STYLE7 {font-size: 24px}
+    .style1
+    {
+        width: 133px;
+        height: 93px;
+    }
+-->
+</style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+<div id="container">
+ <div id="header">
+    <div class="logo"><img src="images/logo.png" style="height: 89px; width: 257px" /></div>
+    <div class="menu">
+        <ul>
+                 <li <a href="../page.html" >首页</a></li>
+          <li class="tiao"></li>
+                 <li> <a href="#">最新资讯</a></li>
+          <li class="tiao"></li>
+           <li > <a href="health.html" >健康之家</a></li>
+          <li class="tiao"></li>
+                 <li ><a href="zhuanti.html">专题策划</a></li>
+          <li class="tiao"></li>
+         
+                  <li> <a  href="#"  target="_blank" >专家咨询</a></li>
+          <li class="tiao"></li>
+                 <li><a href="User/UserLogin.html" >在线留言</a></li>
+      </ul>
+    </div>
+</div>
+<div id="tu"><img src="images/Gesut_tu01.jpg" width="1024" height="257" /></div>
+  
+<div id="main">
+     <div class="leftbox">
+         <div class="leftbox01">
+               <div class="title"><img src="images/rightbox_title.jpg" 
+                       style="height: 32px; width: 300px" /></div>
+<div class="content">
+                 <table cellpadding="0" cellspacing="0" class="style1">
+                     <tr>
+                         <td>
+                             <asp:TreeView ID="TreeView1" runat="server" Height="183px" Width="150px">
+                                 <Nodes>
+                                     <asp:TreeNode NavigateUrl="~/Adm/ShowBankuai.aspx" Text="浏览板块" Value="浏览板块">
+                                     </asp:TreeNode>
+                                     <asp:TreeNode NavigateUrl="~/Adm/ShowAllCard.aspx" Text="浏览帖子" Value="浏览帖子">
+                                     </asp:TreeNode>
+                                     <asp:TreeNode Text="管理" Value="管理">
+                                         <asp:TreeNode NavigateUrl="~/Adm/ManageModule.aspx" Text="管理板块" Value="管理板块">
+                                         </asp:TreeNode>
+                                         <asp:TreeNode NavigateUrl="~/Adm/ManageTiezi.aspx" Text="管理贴子" Value="管理贴子">
+                                         </asp:TreeNode>
+                                         <asp:TreeNode NavigateUrl="~/Adm/ManageRevert.aspx" Text="管理回帖" Value="管理回帖">
+                                         </asp:TreeNode>
+                                         <asp:TreeNode NavigateUrl="~/Adm/DManageUsers.aspx" Text="管理用户" Value="管理用户">
+                                         </asp:TreeNode>
+                                     </asp:TreeNode>
+                                     <asp:TreeNode NavigateUrl="~/Adm/ShowBankuai.aspx" Text="返回论坛首页" Value="返回论坛首页">
+                                     </asp:TreeNode>
+                                     <asp:TreeNode NavigateUrl="~/User/UserLogin.aspx" Text="退出论坛" Value="退出论坛">
+                                     </asp:TreeNode>
+                                 </Nodes>
+                             </asp:TreeView>
+                         </td>
+                     </tr>
+                 </table>
+               </div>
+       </div >
+         <div class="leftbox02">
+                <div class="title"><img src="images/rightbox_title01.jpg" width="300" height="34" /></div>
+                <div class="content" align="left" >
+                <span class="STYLE1">
+                    <br />
+                    邮编：453003<br/>
+                    电话：0373-3683015<br/>
+                    传真：0373-3683344<br/>
+                    服务热线：808166036<br/>
+                    邮箱：yuanban@xxu.edu.cn<br/>
+                    www.QuFei.cn</span><br/>
+                </div>
+        </div>
+     </div>
+    <div class="rightbox">
+      
+      
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+      
+      
+    
+    </div>
+    <div id="bottom"> </div>
+</div>
+ <div align="center"><img src="images/bottom.jpg" width="1024" height="40" /><br/>
+   <br/>
+     版权所有：Qu Zhen Fei 2013<br/>
+     地址：河南新乡市金穗大道191号. 电话：0373-666666 邮编：453003 
+ </div>
+ </div>
+    </form>
+</body>
+</aspx>

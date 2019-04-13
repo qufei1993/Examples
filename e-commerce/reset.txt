@@ -1,0 +1,17 @@
+body,ul,ol,li,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding:0;}
+body{font-size:12px;}
+img{border:none;}
+li{list-style:none;}
+input,select,textarea{outline:none;}
+
+/*  清浮动  */
+
+.clearfix:after{content:"";display:block;clear:both;}
+.clearfix{zoom:1;}
+
+/* 选择 */
+::selection{background-color:#669900;color:#ffffff;text-shadow:none;}
+::-moz-selection{background-color:#669900;color:#ffffff;text-shadow:none;}
+
+/*去掉a的下划线*/
+a{blr:expression(this.onFocus=this.blur())}  /*  if IE */

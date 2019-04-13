@@ -1,0 +1,29 @@
+<div id="tu">
+
+<link rel='stylesheet' href='style/style_zhuanti.css' type='text/css' />
+<script type='text/javascript' src='js/zhuanti.min.js'></script>
+<script type='text/javascript' src='js/zhuanti.pack.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	$('#slider').nivoSlider({
+		effect:'random',
+		slices:15,
+		animSpeed:500,
+		pauseTime:2000,
+		directionNav:true,
+		controlNav:true,
+		keyboardNav:true
+	});
+
+});	
+</script>
+<div class="theme-default">
+
+	<div id="slider" class="nivoSlider"><a href="http://sc.chinaz.com/"><a href="http://sc.chinaz.com/"><img src="images/Gesut_tu.jpg" alt="Õ¾³¤ËØ²Ä" width="1024" height="260" /></a></a><a href="http://sc.chinaz.com/"><img src="images/zhuanti_tu.jpg" alt="Õ¾³¤ËØ²Ä" width="1024" height="260" /></a>
+		<a href="http://sc.chinaz.com/"><img src="images/zixun_tu.jpg" alt="Õ¾³¤ËØ²Ä" width="1024" height="260" /></a>	</div> 
+
+</div>
+
+
+</div>

@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* theme-default */
+.theme-default #slider{width:1024px;height:260px;}
+.theme-default .nivoSlider{background:url("../images/loading.gif") no-repeat 50% 50% rgb(255, 255, 255);margin-bottom:50px;position:relative;}
+.theme-default .nivoSlider img{left:0px;top:0px;display:none;position:absolute;}
+.theme-default .nivoSlider a{border:0px currentColor;display:block;}
+.theme-default .nivo-controlNav a{background:url("../images/bullets.png") no-repeat;border:0px currentColor;width:23px;height:17px;text-indent:-9999px;margin-right:3px;float:left;display:block;}
+.theme-default .nivo-controlNav a.active{background-position:0px -17px;}
+.theme-default .nivo-directionNav a{background:url("../images/arrows.png") no-repeat;border:0px currentColor;width:65px;height:65px;text-indent:-2222px;display:block;}
+.theme-default a.nivo-nextNav{background-position:-65px 0px;top:100px;right:50px;}
+.theme-default a.nivo-prevNav{left:50px;top:100px;}
+.theme-default a.nivo-nextNav:hover{background-position:-65px -65px;top:100px;right:50px;}
+.theme-default a.nivo-prevNav:hover{background-position:0px -65px;left:50px;top:100px;}
+.theme-default .nivo-caption{font-family:Helvetica,Arial,sans-serif;}
+.theme-default .nivo-caption a{color:rgb(255, 255, 255);border-bottom-color:rgb(255, 255, 255);border-bottom-width:1px;border-bottom-style:dotted;}
+.theme-default .nivo-caption a:hover{color:rgb(255, 255, 255);}
+/* nivoSlider */
+.nivoSlider{position:relative;}
+.nivoSlider img{left:0px;top:0px;position:absolute;}
+.nivoSlider a.nivo-imageLink{margin:0px;padding:0px;border:0px currentColor;left:0px;top:0px;width:100%;height:100%;display:none;position:absolute;z-index:6;}
+.nivoSlider{position:relative;}
+.nivoSlider img{left:0px;top:0px;position:absolute;}
+.nivoSlider a.nivo-imageLink{margin:0px;padding:0px;border:0px currentColor;left:0px;top:0px;width:100%;height:100%;display:none;position:absolute;z-index:6;}
+.nivo-slice{height:100%;display:block;position:absolute;z-index:5;}
+.nivo-box{display:block;position:absolute;z-index:5;}
+.nivo-caption{background:rgb(0, 0, 0);left:0px;width:30%;bottom:0px;color:rgb(255, 255, 255);display:none;position:absolute;z-index:8;opacity:0.8;}
+.nivo-caption p{margin:0px;display:none;}
+.nivo-caption a{display:inline !important;}
+.nivo-html-caption{display:none;}
+.nivo-directionNav a{top:45%;position:absolute;z-index:9;cursor:pointer;}
+.nivo-prevNav{left:0px;}
+.nivo-nextNav{right:0px;}
+.nivo-controlNav a{position:relative;z-index:9;cursor:pointer;}
+.nivo-controlNav a.active{font-weight:bold;}

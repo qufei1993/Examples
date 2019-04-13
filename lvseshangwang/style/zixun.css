@@ -1,0 +1,714 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-image: url(../images/heade.jpg);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding-top: 0px;
+}
+#container
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+	height:auto;
+    text-align:center;
+	
+}
+#header
+{
+ width: 1024px;
+ height:100px;
+}
+#header .logo
+{
+margin-left:20px;
+margin-top:5px;
+padding:0px;
+float:left;
+width:257px;
+height:89px;
+ }
+ #header .menu
+ { text-align:left;
+  margin-right:5px;
+  margin-top:35px;
+  float:right;
+  width:677px;
+  height:35px;
+background-image: url(../images/menu.jpg);
+ }
+ ul
+{  float:left;
+    margin: 0px;
+    padding:0px;
+    list-style:none;
+}
+#header .menu li
+
+{   float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 110px;
+    text-align:center;
+	
+}
+#header .menu a
+{  
+  
+  color: black;
+  text-decoration:none;
+ }
+
+#header .menu li a:hover
+ { 
+   position:relative;
+   top:2px;
+   left:1px;
+   color:red;
+  }
+  #header .menu .tiao
+{ width:1px;
+    height:18px;
+    background-color:Green;
+    margin-top:5px;
+    margin-bottom:5px;
+    
+}
+
+#tu
+{
+	width:1024px;
+	height:260px;
+	
+}
+#rementitle
+{
+float:left;
+padding-top:5px;
+width:60px;
+height:30px;
+}
+#remen
+{float:right;
+height:30px;
+width:964px;
+}
+#remen ul
+{
+float:left;
+list-style:none;
+}
+#remen li
+
+{  margin-left:0px; 
+float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 100px;
+    text-align:center;	
+}
+#remen a
+{  
+  
+  color: black;
+  text-decoration:none;
+ }
+
+#remen li a:hover
+ { 
+   position:relative;
+   top:1px;
+   left:1px;
+   color:red;
+  }
+#weizhi
+  {
+	float:left;
+	width:1024px;
+	height:30px;
+	text-align:left;
+	background-color: #CCFFCC;
+  }
+#main
+{
+float:left;
+width:1024px;
+height:auto;
+
+}
+#main .leftbox
+{
+float:left;
+width:710px;
+height:auto;
+}
+#main .leftbox .title
+{   float:left;
+	width:710px;
+	height:30px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0000FF;
+}
+#main .leftbox .content
+{ margin-top:5px;
+  float:left;
+  width:330px;
+  height:300px;
+}
+
+
+#main .leftbox .content #zzsc
+ {  float:left;
+	height: 220px;
+	border-radius:4px;
+	border:4px solid #C39;
+	position:relative;
+	font-size:12px;
+	behavior: url(css/pie.htc);
+	overflow:hidden;
+	width:320px;
+}
+#main .leftbox .content #zzsc #img li 
+{
+	opacity:1;
+	filter:alpha(opacity=100);
+	cursor:pointer;
+	float:left;
+}
+#main .leftbox .content #zzsc #img {
+	list-style:none;
+	position:absolute;
+	width:330px;
+	height:220px;
+	top:0px;
+	left:0px;
+	overflow: auto;
+}
+#main .leftbox .content #zzsc #num {
+	list-style:none;
+	position:absolute;
+	bottom:10px;
+	right:20px;
+	z-index:999;
+}
+#main .leftbox .content #zzsc #num li {
+	display:block;
+	height:20px;
+	width:20px;
+	margin-left:5px;
+	background:#FFFFFF;
+	float:left;
+	color:#DE7D4B;
+	text-align:center;
+	line-height:20px;
+	border-radius:20px;
+	opacity:0.7;
+	filter:alpha(opacity=70);
+	cursor:pointer;
+	behavior: url(css/pie.htc)
+}
+#main .leftbox .content #zzsc #num .hover {
+	background:#FF6600;
+	color:#FFFFFF;
+	font-weight:bold
+}
+#main .leftbox .content .z1
+{
+
+width:320px;
+height:65px;
+
+}
+
+#main .leftbox .content .z1  ul
+{  float:left;
+    margin: 0px;
+    padding:0px;
+    list-style:none;
+}
+#main .leftbox .content .z1  li
+
+{   float:right;
+     height :65px;
+    float: left;
+    width: 70px;
+    text-align:center;
+	margin-left:10px;	
+}
+#main .leftbox .content .z1 a
+{  
+  
+  color: black;
+  text-decoration:none;
+ }
+#main .leftbox .content .z1 ul li a {
+	height: 65px;
+	width: 70px;
+	display: block;
+	text-indent: -9999px;
+
+}
+#main .leftbox .content .z1  ul li a.nav1 {
+	background-image: url(../images/zixun_14.png);
+	background-repeat: no-repeat;
+}
+#main .leftbox .content .z1  ul li a.nav2 {
+	background-image: url(../images/zixun_15.png);
+	background-repeat: no-repeat;
+}
+#main .leftbox .content .z1  ul li a.nav3 {
+	background-image: url(../images/zixun_16.png);
+	background-repeat: no-repeat;
+}
+#main .leftbox .content .z1  ul li a.nav4 {
+	background-image: url(../images/zixun_17.png);
+	background-repeat: no-repeat;
+}
+
+#main .leftbox .content .z1  ul li a.nav1:hover {
+	background-image: url(../images/zixun_over_14.png);
+	background-repeat: no-repeat;
+}
+#main .leftbox .content .z1  ul li a.nav2:hover {
+	background-image: url(../images/zixun_over_15.png);
+	background-repeat: no-repeat;
+}
+#main .leftbox .content .z1  ul li a.nav3:hover {
+background-image: url(../images/zixun_over_16.png);
+	background-repeat: no-repeat;
+}
+#main .leftbox .content .z1  ul li a.nav4:hover {
+	background-image: url(../images/zixun_over_17.png);
+	background-repeat: no-repeat;
+}
+
+#header .menu li a:hover
+ { 
+   position:relative;
+   top:2px;
+   left:1px;
+   color:red;
+  }
+
+
+
+#main .leftbox .content01
+{ margin-top:5px;
+  margin-left:10px;
+  float:left;
+  width:360px;
+  height:300px;
+}
+#main .leftbox .content01 .title
+{ 
+  float:left;
+  width:360px;
+  height:60px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color:#666666;
+}
+#main .leftbox .content01 .title01
+{ 
+  float:left;
+  width:360px;
+  height:240px;
+  text-align:left;
+}
+.title01 li
+
+{  margin-left:0px; 
+    float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 180px;
+    text-align:center;	
+}
+.title01 a
+{  
+  text-align:left;
+  color: black;
+  text-decoration:none;
+ font-size:15px;
+ }
+
+.title01 li a:hover
+ { 
+   position:relative;
+   top:1px;
+   left:1px;
+   color:red;
+  }
+  #main .leftbox .content01 .title01 .left
+  {
+  width:180px;
+  height:240px;
+  float:left;
+  }
+    #main .leftbox .content01 .title01 .right
+  {
+  width:180px;
+  height:240px;
+  float:left;
+  }
+  #main .leftbox .leftbox01
+  {  
+    float:left;
+	width:340px;
+	height:auto;
+  }
+  #main .leftbox .leftbox01 .title
+  { padding-top:10px;
+   text-align:left;
+	float:left;
+	width:340px;
+	height:20px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color:#0033CC;
+  }
+   #main .leftbox .leftbox01 .content
+   {
+    margin:0px;
+    float:left;
+	width:340px;
+	height:30px;
+   
+   }
+   #main .leftbox .leftbox01 .tu
+   {
+   margin-top:10px;
+    float:left;
+    width:100px;
+    height:120px;
+   }
+    #main .leftbox .leftbox01 .title01
+	{
+	margin-top:10px;
+	 float:left;
+	 margin-left:10px;
+	  width:230px;
+      height:120px;
+	}
+#main .leftbox .leftbox01 .title01 li
+
+{  margin-left:0px; 
+    float:right;
+     height :30px;
+    line-height:30px;
+    float: left;
+    width: 230px;
+    text-align:center;	
+}
+#main .leftbox .leftbox01 .title01 a
+{  
+  text-align:left;
+  color: black;
+  text-decoration:none;
+ font-size:15px;
+ }
+
+#main .leftbox .leftbox01 .title01 li a:hover
+ { 
+   position:relative;
+   top:1px;
+   left:1px;
+   color:#CC9900;
+  }
+	
+	
+  #main .leftbox .leftbox01_right
+  { 
+  margin-left:10px;
+	float:left;
+	width:360px;
+	height:auto;
+  }
+  #main .leftbox .leftbox01_right .title
+  {padding-top:10px; 
+  text-align:left;
+    float:left;
+	width:100px;
+	height:20px;
+   border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color:#0033CC;
+  }
+  
+    #main .leftbox .leftbox01_right .title01
+  {
+   padding-top:10px; 
+    float:left;
+	width:260px;
+	height:20px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color:#6699FF;
+	text-align:right;
+  }
+    #main .leftbox .leftbox01_right .content
+  { margin-top:0px;
+	float:left;
+	width:360px;
+	height:30px;
+  }
+  #main .leftbox .leftbox01_right .title02
+  {
+    float:left;
+	width:55px;
+	height:auto;
+  }
+ #main .leftbox .leftbox01_right .title02 .tiao
+  { width:1px;
+    height:18px;
+    background-color:#333333;
+    margin-top:5px;
+    margin-bottom:5px;
+  }
+ #main .leftbox .leftbox01_right .title02 li
+
+{ 
+   float:left;
+    margin-left:0px; 
+     height :30px;
+    line-height:28px;
+    width: 42px;
+    text-align:center;	
+	  margin-top:3px;
+}
+ #main .leftbox .leftbox01_right .title02 a
+{  
+  text-align:left;
+  color: black;
+  text-decoration:none;
+ font-size:15px;
+ }
+
+ #main .leftbox .leftbox01_right .title02 li a:hover
+ { 
+   position:relative;
+   top:1px;
+   left:1px;
+   color:#CC9900;
+ 
+  }
+
+    #main .leftbox .leftbox01_right .title03
+  {
+  float:left;
+	width:304px;
+	height:auto;
+	font-size:13px;
+  
+  }
+   #main .leftbox .leftbox01_right .title03 li
+
+{ 
+   float:left;
+    margin-left:0px; 
+     height :30px;
+    line-height:28px;
+    width:152px;
+    text-align:center;	
+	 margin-top:3px;
+}
+ #main .leftbox .leftbox01_right .title03 a
+{  
+  text-align:left;
+  color: black;
+  text-decoration:none;
+ font-size:15px;
+ }
+
+ #main .leftbox .leftbox01_right .title03 li a:hover
+ { 
+   position:relative;
+   top:1px;
+   left:1px;
+   color:#CC9900;
+  }
+  #main .rightbox
+{
+float:left;
+margin-left:10px;
+width:300px;
+height:auto;
+}
+#main .rightbox .title
+{
+float:left;
+width:300px;
+height:30px;
+     border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #0000FF;
+}
+#main .rightbox .content
+{
+ 
+ float:left;
+ width:300px;
+ height:300px;
+ text-align:left;
+}
+#main .rightbox .content li
+{
+ float:left;
+ height:30px;
+ width:270px;
+ line-height:30px;
+}
+#main .rightbox .content .tou
+{
+	padding-left:5px;
+	float:left;
+	width:20px;
+	height:30px;
+	font-size:16px;
+	color:#FF0000;
+	font-style: oblique;
+	font-weight: bold;
+}
+#main .rightbox .content .tou01
+{
+	padding-left:5px;
+	float:left;
+	width:20px;
+	height:30px;
+	font-size:16px;
+	color:#333333;
+	font-style: oblique;
+	font-weight: bold;
+}
+#main .rightbox .content a
+{
+
+  text-decoration:none;
+  font-size:14px;
+  color:black;
+}
+#main .rightbox .content a:hover
+{
+	top:1px;
+	left:1px;
+	color:#CC0033;
+	text-decoration: underline;
+}
+#main .rightbox .content01
+{
+ float:left;
+ width:300px;
+ height:auto;
+ margin-top:10px;
+}
+#main .rightbox .content01 .title
+{
+float:left;
+ padding-top:10px;
+ width:300px;
+ height:20px;
+}
+#main .rightbox .content01 .content02
+{
+
+ float:left;
+ width:300px;
+ height:400px;
+}
+#main .rightbox .content03
+{
+float:left;
+width:300px;
+height:auto;
+}
+#main .rightbox .content03 .title
+{   padding-top:0px;
+	width:300px;
+	padding-top:10px;
+	height:20px;
+	border-bottom-color:#666666;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+#main .rightbox .content03 .title ul
+{
+float:right;
+}
+#main .rightbox .content03 .title li
+{  
+    float:right;
+	width:70px;
+	height:20px;   
+}
+#main .rightbox .content03 .title a
+{
+text-decoration:none;
+color:black;
+}
+#main .rightbox .content03 .title a:hover
+{
+text-decoration:underline;
+color:#CC0033;
+}
+#main .rightbox .content03 .content
+{
+width:300px;
+height:auto;
+float:left;
+}
+#main .rightbox .content03 .content .contentleft
+{
+margin-top:10px;
+width:100px;
+height:100px;
+float:left;
+}
+#main .rightbox .content03 .content .contentright
+{
+margin-top:10px;
+margin-left:20px;
+width:180px;
+height:100px;
+float:left;
+font-size:14px;
+
+}
+#main .rightbox .content03 .content .contentright li
+{
+width:85px;
+height:30px;
+float:left;
+}
+#main .rightbox .content03 .content .contentright a
+{
+width:100px;
+height:30px;
+font-size:14px;
+}
+#main .rightbox .content03 .content .contentright a:hover
+{
+top:1px;
+height:1px;
+text-decoration:underline;
+}
+#main .rightbox .content03 .content .contentright .tou
+{
+padding:5px;
+width:20px;
+height:20px;
+float:left;
+}
+#buttom
+{
+	float:left;
+	width:100%;
+	height:100px;
+	text-align:center;
+	
+}

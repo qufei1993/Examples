@@ -1,0 +1,23 @@
+{
+    "apps": [
+      {
+        "name": "React-Dianping",
+        "script": "mock/server.js"
+      }
+    ],
+    "deploy": {
+      "pro": {
+        "user": "qufei",
+        "host": "120.27.239.212",
+        "port": "30001",
+        "ref": "origin/master",
+        "repo": "git@github.com:Q-Angelo/React-Dianping.git",
+        "path": "/usr/src/api/React-Dianping",
+        "post-deploy": "npm install && pm2 startOrRestart ecosystem.json",
+        "env"  : {
+            "NODE_ENV": "pro"
+        }
+      }
+    }
+  }
+  

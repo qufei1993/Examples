@@ -1,0 +1,62 @@
+{
+  "name": "React-Dianping",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Q-Angelo/React-Dianping.git"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "dev": "set NODE_ENV=dev && webpack-dev-server --progress --colors",
+    "mock": "node --harmony ./mock/server.js",
+    "build": "rd/s/q build && set NODE_ENV=production && webpack --config ./webpack.server.js --progress --colors",
+    "mac-build": "rm -rf ./build && NODE_ENV=production && webpack --config ./webpack.server.js --progress --colors"
+  },
+  "node": {
+    "fs": "empty"
+  },
+  "homepage": "https://q-angelo.github.io/React-Dianping",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-react-html-attrs": "^2.0.0",
+    "babel-plugin-react-transform": "^2.0.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "html-webpack-plugin": "^2.28.0",
+    "less": "^2.7.2",
+    "less-loader": "^4.0.3",
+    "open-browser-webpack-plugin": "0.0.5",
+    "postcss-loader": "^2.0.5",
+    "style-loader": "^0.17.0",
+    "url-loader": "^0.5.8",
+    "webpack": "^2.5.1",
+    "webpack-dev-server": "^2.4.5",
+    "koa": "^1.4.0",
+    "koa-router": "^5.4.2"
+  },
+  "dependencies": {
+    "es6-promise": "^4.1.0",
+    "fs": "0.0.1-security",
+    "net": "^1.0.2",
+    "react": "^15.5.4",
+    "react-addons-perf": "^15.4.2",
+    "react-addons-pure-render-mixin": "^15.5.2",
+    "react-dom": "^15.5.4",
+    "react-redux": "^5.0.5",
+    "react-router": "^2.7.0",
+    "react-swipe": "^5.1.1",
+    "redux": "^3.6.0",
+    "request": "^2.85.0",
+    "tls": "0.0.1",
+    "whatwg-fetch": "^2.0.3"
+  }
+}

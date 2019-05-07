@@ -18,4 +18,5 @@
 
 * [Node.js + Express + Jade + MongoDB开发豆瓣电影](https://q-angelo.github.io/project-training/nodejs/dazhongdianping/)
 * [ES6+Gulp 构建彩票项目](https://q-angelo.github.io/project-training/nodejs/Gulp-Init-ES6/)
+* [RabbitMQ延迟队列实现定时任务（Node.js客户端版Demo）](https://q-angelo.github.io/project-training/nodejs/rabbitmq-timed-task)
 

@@ -12,13 +12,14 @@
 
 ## **React**
 
-* [React仿大众点评WebApp开发](https://q-angelo.github.io/project-training/react/dazhongdianping/)
+* [React 仿大众点评 WebApp 开发](https://q-angelo.github.io/project-training/react/dazhongdianping/)
 
 ## **Node.js**
 
-* [Node.js + Express + Jade + MongoDB开发豆瓣电影](https://q-angelo.github.io/project-training/nodejs/dazhongdianping/)
-* [ES6+Gulp 构建彩票项目](https://q-angelo.github.io/project-training/nodejs/Gulp-Init-ES6/)
-* [RabbitMQ延迟队列实现定时任务（Node.js客户端版Demo）](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-timed-task)
+* [Node.js + Express + Jade + MongoDB 开发豆瓣电影](https://q-angelo.github.io/project-training/nodejs/dazhongdianping/)
+* [ES6 + Gulp 构建彩票项目](https://q-angelo.github.io/project-training/nodejs/Gulp-Init-ES6/)
+* [RabbitMQ 高级特性消费端限流策略实现](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-prefetch)
+* [RabbitMQ 延迟队列实现定时任务（Node.js客户端版Demo）](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-timed-task)
 
 ## **Redis**
 * [Redis 计数器实现并发场景下的优惠券领取功能](https://github.com/Q-Angelo/project-training/tree/master/redis/counter-luck)

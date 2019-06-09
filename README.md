@@ -20,3 +20,6 @@
 * [ES6+Gulp 构建彩票项目](https://q-angelo.github.io/project-training/nodejs/Gulp-Init-ES6/)
 * [RabbitMQ延迟队列实现定时任务（Node.js客户端版Demo）](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-timed-task)
 
+## **Redis**
+* [Redis 计数器实现并发场景下的优惠券领取功能](https://github.com/Q-Angelo/project-training/tree/master/redis/counter-luck)
+

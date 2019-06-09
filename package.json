@@ -1,0 +1,22 @@
+{
+  "name": "project-training",
+  "version": "1.0.0",
+  "description": "## **静态网站**",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Q-Angelo/project-training.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Q-Angelo/project-training/issues"
+  },
+  "homepage": "https://github.com/Q-Angelo/project-training#readme",
+  "dependencies": {
+    "ioredis": "^4.10.0"
+  }
+}

@@ -22,7 +22,8 @@
 * [RabbitMQ 延迟队列实现定时任务（Node.js 客户端版 Demo）](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-timed-task)
 * [多进程端口占用冲突](https://github.com/Q-Angelo/project-training/tree/master/nodejs/port-conflict)
 * [句柄传递解决多进程端口占用冲突问题](https://github.com/Q-Angelo/project-training/tree/master/nodejs/handle-pass)
-* [孤儿进程 Demo](https://github.com/Q-Angelo/project-training/tree/master/nodejs/orphan-process)
+* [孤儿进程](https://github.com/Q-Angelo/project-training/tree/master/nodejs/orphan-process)
+* [父子进程 IPC 通信](https://github.com/Q-Angelo/project-training/tree/master/nodejs/master-worker-ipc)
 
 ## **Redis**
 * [Redis 计数器实现并发场景下的优惠券领取功能](https://github.com/Q-Angelo/project-training/tree/master/redis/counter-luck)

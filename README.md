@@ -24,6 +24,7 @@
 * [句柄传递解决多进程端口占用冲突问题](https://github.com/Q-Angelo/project-training/tree/master/nodejs/handle-pass)
 * [孤儿进程](https://github.com/Q-Angelo/project-training/tree/master/nodejs/orphan-process)
 * [父子进程 IPC 通信](https://github.com/Q-Angelo/project-training/tree/master/nodejs/master-worker-ipc)
+* [守护进程实现 Node.js 版本](https://github.com/Q-Angelo/project-training/tree/master/nodejs/simple-daemon)
 
 ## **Redis**
 * [Redis 计数器实现并发场景下的优惠券领取功能](https://github.com/Q-Angelo/project-training/tree/master/redis/counter-luck)

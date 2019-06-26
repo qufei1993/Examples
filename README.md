@@ -20,6 +20,7 @@
 * [ES6 + Gulp 构建彩票项目](https://q-angelo.github.io/project-training/nodejs/Gulp-Init-ES6/)
 * [RabbitMQ 高级特性消费端限流策略实现](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-prefetch)
 * [RabbitMQ 延迟队列实现定时任务（Node.js 客户端版 Demo）](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-timed-task)
+* [一次RabbitMQ生产故障引发的服务重连限流思考](https://github.com/Q-Angelo/project-training/tree/master/rabbitmq/reconnection)
 * [多进程端口占用冲突](https://github.com/Q-Angelo/project-training/tree/master/nodejs/port-conflict)
 * [句柄传递解决多进程端口占用冲突问题](https://github.com/Q-Angelo/project-training/tree/master/nodejs/handle-pass)
 * [孤儿进程](https://github.com/Q-Angelo/project-training/tree/master/nodejs/orphan-process)

@@ -26,6 +26,7 @@
 * [孤儿进程](https://github.com/Q-Angelo/project-training/tree/master/nodejs/orphan-process)
 * [父子进程 IPC 通信](https://github.com/Q-Angelo/project-training/tree/master/nodejs/master-worker-ipc)
 * [守护进程实现 Node.js 版本](https://github.com/Q-Angelo/project-training/tree/master/nodejs/simple-daemon)
+* [Node.js + Consul 实现服务注册、健康检查、配置中心](https://github.com/Q-Angelo/project-training/tree/master/nodejs/consul-demo)
 
 ## **Redis**
 * [Redis 计数器实现并发场景下的优惠券领取功能](https://github.com/Q-Angelo/project-training/tree/master/redis/counter-luck)

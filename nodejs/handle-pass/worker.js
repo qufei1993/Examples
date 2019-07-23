@@ -1,7 +1,7 @@
 const http = require('http');
-http.createServer((req, res) => {
+const server = http.createServer((req, res) => {
 	res.end('I am worker, pid: ' + process.pid + ', ppid: ' + process.ppid);
-})
+});
 
 let worker;
 process.title = 'node-worker'

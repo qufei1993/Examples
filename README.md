@@ -16,7 +16,7 @@
 
 ## **Node.js**
 
-* [Node.js + Express + Jade + MongoDB 开发豆瓣电影](https://q-angelo.github.io/project-training/nodejs/dazhongdianping/)
+* [Node.js + Express + Jade + MongoDB 开发豆瓣电影](https://q-angelo.github.io/project-training/nodejs/movies/)
 * [ES6 + Gulp 构建彩票项目](https://q-angelo.github.io/project-training/nodejs/Gulp-Init-ES6/)
 * [RabbitMQ 高级特性消费端限流策略实现](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-prefetch)
 * [RabbitMQ 延迟队列实现定时任务（Node.js 客户端版 Demo）](https://github.com/Q-Angelo/project-training/tree/master/nodejs/rabbitmq-timed-task)

@@ -1,0 +1,17 @@
+{
+  "name": "mongodb-serverless-conn-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^3.4.1"
+  },
+  "devDependencies": {
+    "serverless-offline": "^5.12.1"
+  }
+}

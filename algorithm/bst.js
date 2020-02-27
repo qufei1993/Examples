@@ -5,6 +5,7 @@ const PRE_ORDER_TRAVERSE_RECUSIVE = Symbol('BST#recursivePreOrderTraverse');
 const IN_ORDER_TRAVERSE_RECUSIVE = Symbol('BST#recursiveInOrderTraverse');
 const POST_ORDER_TRAVERSE_RECUSIVE = Symbol('BST#recursivePostOrderTraverse');
 const REMOVE_NODE_RECUSIVE = Symbol('BST#removeNodeRecusive');
+const DESTORY_RECUSIVE = Symbol('BST#destoryRecusive');
 
 /**
  * 二叉搜索树
@@ -86,10 +87,7 @@ class BST {
      * 二叉树销毁，可以利用后续遍历特性实现
      */
     destroy(){
-        return this[POST_ORDER_TRAVERSE_RECUSIVE](this.root, function(node) {
-            node = null;
-            this.count--;
-        });
+        this.root = this[DESTORY_RECUSIVE](this.root);
     }
 
     minNode(node) {
@@ -224,6 +222,21 @@ class BST {
     }
 
     /**
+     * 销毁二叉搜索树递归调用
+     * @param { Object } node 
+     */
+    [DESTORY_RECUSIVE](node) {
+        if (node !== null) {
+            this[DESTORY_RECUSIVE](node.left);
+            this[DESTORY_RECUSIVE](node.right);
+
+            node = null;
+            this.count--;
+            return node;
+        }
+    }
+
+    /**
      * 删除一个节点递归调用
      * @param {*} node 
      * @param {*} value 
@@ -311,5 +324,8 @@ console.dir(bST, { depth: 4 })
 // bST.postOrderTraverse(printNode);
 
 bST.removeNode(30);
-
 console.dir(bST, { depth: 4 });
+bST.destroy();
+
+console.log(bST);
+

@@ -1,0 +1,1 @@
+Nodejs Callback 转 Promise 对象测试

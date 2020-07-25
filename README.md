@@ -12,6 +12,7 @@
 
 ## 个人学习项目
 
+* [个人博客前端页面布局](./code/project/qublog)
 * [React 仿大众点评 WebApp 开发](./code/project/dazhongdianping)
 * [HTML + CSS + JS 实现的企业网站前端页面布局](./code/project/company-website)
 * [HTML + CSS + JS 实现的商城前端页面布局](./code/project/e-commerce)

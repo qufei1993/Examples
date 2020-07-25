@@ -1,0 +1,14 @@
+<html>
+  <body>
+    <script src="https://cdn.bootcdn.net/ajax/libs/fetch/3.1.0/fetch.min.js"></script>
+    <script src="./index.js"></script>
+    <script>
+      const requestLimit = new RequestLimit(2);
+      (async () => {
+        for (let i=0; i<8; i++) {
+          requestLimit.request(() => fetch("http://q.qlogo.cn/qqapp/100312990/DE1931D5330620DBD07FB4A5422917B6/100"));
+        }
+      })()
+    </script>
+  </body>
+</html>

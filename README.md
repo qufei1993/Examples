@@ -6,6 +6,9 @@
 
 * [实现浏览器中的最大请求并发数控制](./code/javascript/request-limit)
 
+## Database
+* [Mongoose 与非 _id 字段做关联查询](./code/database/mongoose-populate)
+
 ## 即时聊天
 
 * [Node.js + Socket.io 开发的一对一即时聊天](./code/im/private-chat-socketio) 

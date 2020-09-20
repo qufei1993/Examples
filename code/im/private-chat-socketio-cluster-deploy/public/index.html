@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./css/chat.css" rel="stylesheet">
+    <title>Node.js + Socket.io 实现一对一私聊</title>
+</head>
+<body>
+    <script src="./js/parse-params.js"></script>
+    <div class="container">
+      <div class="chat-header row">
+        <span class="col-xs-2 chat-header-left glyphicon glyphicon-menu-left"></span>
+        <span class="col-xs-8 chat-header-center" id="chatHeaderCenter"></span>
+        <span class="col-xs-2 chat-header-right glyphicon glyphicon-option-horizontal"></span>
+      </div>
+      <div class="chat-content" id="chatContent">
+        <!-- <div class="chat-main">
+          <div class="chat-user">
+            <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1595058848883&di=c14a15eac760088e6c6928b659a8c91a&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20171212%2Fa66ca7c837124f6ca0723987664cd9a6.jpeg">
+            <span class="text-photo">赵敏</span>
+            <cite><i>2020-07-18 20:26</i> 赵敏</cite>
+          </div>
+          <div class="chat-text">你好，我是主人的美女秘书，有什么事就跟我说吧，等他回来我会转告他的。[心] [心] [心]</div>
+        </div>
+        <div class="chat-main chat-mine">
+          <div class="chat-user">
+            <img src="http://img.duoziwang.com/2018/20/08140901908261.jpg">
+            <span class="text-photo">聂小倩</span>
+            <cite><i>2020-07-18 20:26</i> 聂小倩</cite>
+          </div>
+          <div class="chat-text">你好，我是主人的美女秘书，有什么事就跟我说吧，等他回来我会转告他的。[心] [心] [心]</div>
+        </div> -->
+      </div>
+      <div class="chat-bottom row">
+        <span class="col-xs-10 col-md-11 input-text"><input type="text" class="form-control " id="inputText" placeholder="请输入要发送的内容..."></span>
+        <span class="col-xs-2 col-md-1 span-submit">
+          <input class="btn btn-default btn-primary input-submit" id="sendBtn" data-dismiss="alert" type="submit" value="发送">
+        </span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:30021/socket.io/socket.io.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+</html>

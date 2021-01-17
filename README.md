@@ -11,7 +11,11 @@
 
 ## 即时聊天
 
-* [Node.js + Socket.io 开发的一对一即时聊天](./code/im/private-chat-socketio) 
+* [Node.js + Socket.io 开发的一对一即时聊天](./code/im/private-chat-socketio)
+
+## Node.js
+
+* [N-API 入门示例](./code/nodejs/n-api-hello)
 
 ## 个人学习项目
 
